@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Satyu Polypack - Plastic Bags Manufacturer & Exporter</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <style>
         /* Reset & Base Styles */
         * {
@@ -859,75 +860,30 @@
     </footer>
 
     <script>
+        // Initialize EmailJS with your public key
+        (function() {
+            emailjs.init('TFskO9w5-Y-JKzVh9');
+        })();
+        
         // Mobile menu toggle
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const nav = document.querySelector('nav');
         
-        mobileMenuBtn.addEventListener('click', () => {
-            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
-        });
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+            });
+        }
         
-        // Handle form submission
+        // Handle form submission with EmailJS
         const contactForm = document.getElementById('contactForm');
         
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const phone = document.getElementById('phone').value;
-            const product = document.getElementById('product').value;
-            const message = document.getElementById('message').value;
-            
-            // Prepare product name for display
-            const productNames = {
-                'plastic-bags': 'Plastic Bags',
-                'garbage-bags': 'Garbage Bags',
-                'can-liners': 'Can Liners',
-                'custom': 'Custom Solution'
-            };
-            const productText = product ? productNames[product] || product : 'Not specified';
-            
-            // In a real implementation, you would send this data to a server
-            // For this demo, we'll just show an alert
-            alert(`Thank you ${name}! Your quote request has been sent successfully.\n\nWe will contact you at ${email} or ${phone} shortly regarding your interest in ${productText}.`);
-            
-            // Reset form
-            contactForm.reset();
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    if(window.innerWidth <= 768) {
-                        nav.style.display = 'none';
-                    }
-                }
-            });
-        });
-        
-        // Responsive navigation
-        window.addEventListener('resize', () => {
-            if(window.innerWidth > 768) {
-                nav.style.display = 'block';
-            } else {
-                nav.style.display = 'none';
-            }
-        });
-    </script>
-</body>
-</html>
+                // Get form values
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const product = document.
