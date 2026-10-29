@@ -1,0 +1,3451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Satyu Polypack | Packaging Manufacturer &amp; Export Partner</title>
+<meta name="description" content="Satyu Polypack manufactures plastic bags, trash can liners, drawstring garbage bags, produce rolls, thermal paper, and paper bags for international B2B markets." />
+<meta name="theme-color" content="#123C32" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Satyu Polypack | Packaging Manufacturer &amp; Export Partner" />
+<meta property="og:description" content="Manufacturing packaging solutions. Serving global markets. Plastic bags, trash liners, ice bags, produce rolls, thermal paper and paper bags for B2B buyers." />
+<meta property="og:site_name" content="Satyu Polypack" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Satyu Polypack",
+  "description": "Packaging manufacturer with over eight years of experience serving overseas markets. Flexible plastic packaging, waste-management products, thermal paper and paper bags for B2B buyers.",
+  "slogan": "Manufacturing Packaging Solutions. Serving Global Markets.",
+  "email": "satyupolypack@gmail.com",
+  "telephone": "+91 98256 03124",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Daman",
+    "addressCountry": "IN"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "sales",
+    "email": "satyupolypack@gmail.com",
+    "telephone": "+91 98256 03124"
+  }
+}
+</script>
+
+<style>
+/* ============================================================
+   1. DESIGN TOKENS
+   ============================================================ */
+:root{
+  --forest:#123C32;
+  --forest-2:#0B271F;
+  --green:#247653;
+  --lime:#8BC34A;
+  --off:#F7F8F4;
+  --char:#202722;
+  --gray:#E6E9E4;
+  --white:#FFFFFF;
+  --muted:#5C6760;
+  --line:rgba(18,60,50,.14);
+  --line-strong:rgba(18,60,50,.24);
+  --line-light:rgba(255,255,255,.16);
+
+  --r-sm:10px;
+  --r-md:18px;
+  --r-lg:28px;
+
+  --maxw:1280px;
+  --pad:clamp(1.25rem, 4vw, 2.5rem);
+  --section-y:clamp(4.5rem, 9vw, 9rem);
+  --hdr:84px;
+
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+}
+
+/* ============================================================
+   2. RESET & BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--off);
+  color:var(--char);
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  font-size:16px;
+  line-height:1.68;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img,svg{display:block;max-width:100%}
+h1,h2,h3,h4,h5{
+  font-family:'Manrope','Inter',system-ui,sans-serif;
+  font-weight:700;
+  line-height:1.06;
+  letter-spacing:-.025em;
+  margin:0;
+  color:inherit;
+}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+ul,ol{margin:0;padding:0;list-style:none}
+::selection{background:var(--lime);color:var(--forest)}
+
+:focus-visible{
+  outline:3px solid var(--lime);
+  outline-offset:3px;
+  border-radius:4px;
+}
+
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+
+/* ============================================================
+   3. LAYOUT UTILITIES
+   ============================================================ */
+.container{
+  width:min(100% - (var(--pad) * 2), var(--maxw));
+  margin-inline:auto;
+}
+.section{padding-block:var(--section-y);position:relative}
+.section--dark{background:var(--forest);color:#EEF3EF}
+.section--dark h2,.section--dark h3{color:#fff}
+.section--gray{background:var(--gray)}
+.section--white{background:var(--white)}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-size:.7rem;font-weight:600;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--green);
+  margin:0 0 1.15rem;
+}
+.eyebrow::before{
+  content:"";width:26px;height:1.5px;background:currentColor;opacity:.6;flex:none;
+}
+.eyebrow--light{color:var(--lime)}
+
+.h2{font-size:clamp(1.9rem,4.1vw,3.35rem);max-width:20ch}
+.h3{font-size:clamp(1.25rem,2vw,1.55rem);letter-spacing:-.02em}
+.lede{
+  font-size:clamp(1rem,1.25vw,1.115rem);
+  color:var(--muted);
+  max-width:62ch;
+  margin-top:1.35rem;
+}
+.section--dark .lede{color:rgba(238,243,239,.72)}
+
+.section-head{max-width:760px;margin-bottom:clamp(2.5rem,5vw,4.25rem)}
+.section-head--split{
+  display:grid;grid-template-columns:1fr;gap:2rem;max-width:none;
+  align-items:end;
+}
+@media(min-width:900px){
+  .section-head--split{grid-template-columns:1.35fr .85fr;gap:4rem}
+  .section-head--split .lede{margin-top:0;padding-bottom:.4rem}
+}
+
+/* ============================================================
+   4. BUTTONS & LINKS
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  padding:.95rem 1.65rem;border-radius:100px;
+  font-size:.925rem;font-weight:600;letter-spacing:-.01em;
+  border:1px solid transparent;cursor:pointer;
+  transition:transform .35s var(--ease),background-color .3s var(--ease),
+             color .3s var(--ease),border-color .3s var(--ease),box-shadow .35s var(--ease);
+  will-change:transform;white-space:nowrap;
+}
+.btn svg{flex:none;transition:transform .35s var(--ease)}
+.btn:hover svg{transform:translateX(3px)}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0)}
+
+.btn--primary{background:var(--green);color:#fff}
+.btn--primary:hover{background:var(--forest);box-shadow:0 12px 30px -12px rgba(18,60,50,.6)}
+
+.btn--lime{background:var(--lime);color:var(--forest-2)}
+.btn--lime:hover{background:#9ad35c;box-shadow:0 12px 30px -12px rgba(139,195,74,.7)}
+
+.btn--dark{background:var(--forest);color:#fff}
+.btn--dark:hover{background:var(--forest-2)}
+
+.btn--ghost{border-color:rgba(255,255,255,.34);color:#fff;background:rgba(255,255,255,.04)}
+.btn--ghost:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.6)}
+
+.btn--outline{border-color:var(--line-strong);color:var(--char);background:transparent}
+.btn--outline:hover{background:var(--forest);color:#fff;border-color:var(--forest)}
+
+.btn--sm{padding:.72rem 1.25rem;font-size:.85rem}
+.btn--block{width:100%}
+
+.link-arrow{
+  display:inline-flex;align-items:center;gap:.55rem;
+  font-weight:600;font-size:.925rem;color:var(--green);
+  border-bottom:1px solid transparent;padding-bottom:2px;
+  transition:gap .3s var(--ease),border-color .3s var(--ease),color .3s;
+}
+.link-arrow:hover{gap:.85rem;border-color:currentColor}
+.section--dark .link-arrow{color:var(--lime)}
+
+/* ============================================================
+   5. SCROLL REVEAL
+   ============================================================ */
+.reveal{
+  opacity:0;transform:translateY(30px);
+  transition:opacity .95s var(--ease-out),transform .95s var(--ease-out);
+  transition-delay:var(--d,0ms);
+}
+.reveal.is-in{opacity:1;transform:none}
+
+@keyframes riseIn{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+[data-anim]{animation:riseIn 1.05s var(--ease-out) both;animation-delay:var(--d,0s)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  [data-anim]{animation:none}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+}
+
+/* ============================================================
+   6. SCROLL PROGRESS + BACK TO TOP
+   ============================================================ */
+.scroll-progress{
+  position:fixed;top:0;left:0;right:0;height:2px;z-index:200;
+  background:transparent;pointer-events:none;
+}
+.scroll-progress__bar{
+  height:100%;width:0%;
+  background:linear-gradient(90deg,var(--green),var(--lime));
+  transition:width .1s linear;
+}
+
+.to-top{
+  position:fixed;right:clamp(1rem,3vw,2rem);bottom:clamp(1rem,3vw,2rem);
+  width:50px;height:50px;border-radius:50%;
+  background:var(--forest);color:#fff;border:1px solid rgba(255,255,255,.14);
+  display:grid;place-items:center;cursor:pointer;z-index:120;
+  opacity:0;visibility:hidden;transform:translateY(14px);
+  transition:opacity .4s var(--ease),transform .4s var(--ease),visibility .4s,background .3s;
+  box-shadow:0 14px 30px -14px rgba(18,60,50,.7);
+}
+.to-top.is-visible{opacity:1;visibility:visible;transform:none}
+.to-top:hover{background:var(--green);transform:translateY(-3px)}
+
+/* ============================================================
+   7. HEADER / NAVIGATION
+   ============================================================ */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:150;
+  transition:background-color .45s var(--ease),box-shadow .45s var(--ease),
+             border-color .45s var(--ease),backdrop-filter .45s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.header__inner{
+  width:min(100% - (var(--pad) * 2), 1400px);
+  margin-inline:auto;
+  height:var(--hdr);
+  display:flex;align-items:center;justify-content:space-between;gap:2rem;
+  transition:height .45s var(--ease);
+}
+.header.is-solid{
+  background:rgba(247,248,244,.9);
+  -webkit-backdrop-filter:blur(18px) saturate(1.25);
+  backdrop-filter:blur(18px) saturate(1.25);
+  border-bottom-color:var(--line);
+  box-shadow:0 8px 30px -22px rgba(18,60,50,.6);
+}
+.header.is-solid .header__inner{height:70px}
+
+/* Logo */
+.logo{display:flex;align-items:center;gap:.7rem;color:#fff;flex:none}
+.header.is-solid .logo{color:var(--char)}
+.logo__mark{
+  width:34px;height:34px;border-radius:9px;flex:none;
+  background:linear-gradient(145deg,var(--lime),var(--green));
+  display:grid;place-items:center;
+  box-shadow:0 6px 16px -8px rgba(36,118,83,.9);
+}
+.logo__mark svg{width:17px;height:17px}
+.logo__text{display:flex;flex-direction:column;line-height:1}
+.logo__name{
+  font-family:'Manrope',sans-serif;font-weight:800;font-size:1.02rem;
+  letter-spacing:.06em;
+}
+.logo__sub{
+  font-size:.56rem;font-weight:600;letter-spacing:.34em;
+  opacity:.62;margin-top:4px;
+}
+
+/* Nav */
+.nav{display:none;align-items:center;gap:.35rem}
+@media(min-width:1080px){.nav{display:flex}}
+.nav__item{position:relative}
+.nav__link{
+  display:inline-flex;align-items:center;gap:.4rem;
+  padding:.6rem .85rem;border-radius:8px;
+  font-size:.885rem;font-weight:500;color:rgba(255,255,255,.86);
+  transition:color .3s,background-color .3s;
+  position:relative;
+}
+.header.is-solid .nav__link{color:var(--muted)}
+.nav__link::after{
+  content:"";position:absolute;left:.85rem;right:.85rem;bottom:.35rem;height:1.5px;
+  background:currentColor;transform:scaleX(0);transform-origin:left;
+  transition:transform .38s var(--ease);opacity:.85;
+}
+.nav__link:hover{color:#fff}
+.header.is-solid .nav__link:hover{color:var(--forest)}
+.nav__link:hover::after,.nav__link[aria-current="page"]::after{transform:scaleX(1)}
+.nav__link[aria-current="page"]{color:#fff}
+.header.is-solid .nav__link[aria-current="page"]{color:var(--forest);font-weight:600}
+.nav__caret{transition:transform .3s var(--ease)}
+.nav__item:hover .nav__caret{transform:rotate(180deg)}
+
+.header__actions{display:flex;align-items:center;gap:.75rem;flex:none}
+
+/* Mega menu */
+.mega{
+  position:absolute;top:calc(100% + 10px);left:50%;transform:translate(-50%,10px);
+  width:min(760px,86vw);
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--r-md);
+  box-shadow:0 40px 80px -40px rgba(18,60,50,.5);
+  padding:1.4rem;
+  opacity:0;visibility:hidden;pointer-events:none;
+  transition:opacity .3s var(--ease),transform .35s var(--ease),visibility .3s;
+}
+.nav__item:hover .mega,
+.nav__item:focus-within .mega{
+  opacity:1;visibility:visible;pointer-events:auto;transform:translate(-50%,0);
+}
+.mega__grid{display:grid;grid-template-columns:1fr 1fr;gap:.25rem}
+.mega__link{
+  display:flex;align-items:flex-start;gap:.85rem;
+  padding:.8rem .85rem;border-radius:var(--r-sm);
+  transition:background-color .25s var(--ease);
+}
+.mega__link:hover{background:var(--off)}
+.mega__num{
+  font-family:'Manrope',sans-serif;font-size:.7rem;font-weight:800;
+  color:var(--green);opacity:.55;padding-top:.28rem;min-width:18px;
+}
+.mega__title{font-weight:600;font-size:.9rem;color:var(--char);display:block}
+.mega__desc{font-size:.775rem;color:var(--muted);line-height:1.45;margin-top:2px;display:block}
+.mega__foot{
+  margin-top:.9rem;padding-top:.9rem;border-top:1px solid var(--line);
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;
+}
+.mega__foot p{font-size:.8rem;color:var(--muted)}
+
+/* Mobile toggle */
+.burger{
+  display:inline-flex;flex-direction:column;justify-content:center;gap:5px;
+  width:46px;height:46px;border-radius:12px;border:1px solid rgba(255,255,255,.24);
+  background:rgba(255,255,255,.06);cursor:pointer;align-items:center;
+  transition:background .3s,border-color .3s;
+}
+.header.is-solid .burger{border-color:var(--line-strong);background:transparent}
+.burger span{
+  width:19px;height:1.8px;background:#fff;border-radius:2px;
+  transition:transform .4s var(--ease),opacity .3s;
+}
+.header.is-solid .burger span{background:var(--char)}
+.burger.is-open span:nth-child(1){transform:translateY(6.8px) rotate(45deg)}
+.burger.is-open span:nth-child(2){opacity:0}
+.burger.is-open span:nth-child(3){transform:translateY(-6.8px) rotate(-45deg)}
+@media(min-width:1080px){.burger{display:none}}
+
+/* Mobile drawer */
+.drawer{
+  position:fixed;inset:0;z-index:140;
+  background:var(--forest-2);color:#fff;
+  padding:calc(var(--hdr) + 1.5rem) var(--pad) 2rem;
+  display:flex;flex-direction:column;
+  overflow-y:auto;
+  clip-path:circle(0% at calc(100% - 46px) 42px);
+  transition:clip-path .65s var(--ease-out);
+  visibility:hidden;
+}
+.drawer.is-open{clip-path:circle(150% at calc(100% - 46px) 42px);visibility:visible}
+.drawer__nav{display:flex;flex-direction:column}
+.drawer__link{
+  display:flex;align-items:center;justify-content:space-between;
+  padding:1.1rem 0;border-bottom:1px solid rgba(255,255,255,.1);
+  font-family:'Manrope',sans-serif;font-size:1.45rem;font-weight:600;
+  color:#fff;letter-spacing:-.02em;
+  opacity:0;transform:translateY(14px);
+  transition:opacity .5s var(--ease),transform .5s var(--ease);
+}
+.drawer.is-open .drawer__link{opacity:1;transform:none}
+.drawer.is-open .drawer__link:nth-child(1){transition-delay:.14s}
+.drawer.is-open .drawer__link:nth-child(2){transition-delay:.19s}
+.drawer.is-open .drawer__link:nth-child(3){transition-delay:.24s}
+.drawer.is-open .drawer__link:nth-child(4){transition-delay:.29s}
+.drawer.is-open .drawer__link:nth-child(5){transition-delay:.34s}
+.drawer.is-open .drawer__link:nth-child(6){transition-delay:.39s}
+.drawer__link svg{opacity:.4}
+.drawer__foot{margin-top:auto;padding-top:2rem;display:grid;gap:.75rem}
+.drawer__note{font-size:.78rem;color:rgba(255,255,255,.45);margin-top:1.5rem;line-height:1.6}
+.drawer__contact{
+  display:grid;gap:.45rem;margin-top:1.5rem;padding-top:1.25rem;
+  border-top:1px solid rgba(255,255,255,.1);
+  font-size:.82rem;color:rgba(255,255,255,.6);
+}
+.drawer__contact a{color:rgba(255,255,255,.82)}
+.drawer__contact a:hover{color:var(--lime)}
+
+/* ============================================================
+   8. HERO
+   ============================================================ */
+.hero{
+  position:relative;
+  min-height:clamp(600px, 92vh, 940px);
+  display:flex;align-items:center;
+  background:var(--forest-2);
+  color:#fff;
+  overflow:hidden;
+  padding-block:calc(var(--hdr) + 4rem) 5rem;
+}
+.hero__bg{
+  position:absolute;inset:-10% -5% -10% -5%;
+  will-change:transform;
+}
+.hero__bg svg{width:100%;height:100%;object-fit:cover}
+.hero__veil{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(120% 90% at 78% 42%, rgba(11,39,31,.15) 0%, rgba(11,39,31,.72) 62%, rgba(11,39,31,.94) 100%),
+    linear-gradient(100deg, rgba(11,39,31,.97) 0%, rgba(11,39,31,.86) 36%, rgba(11,39,31,.42) 68%, rgba(11,39,31,.62) 100%);
+}
+.hero__inner{position:relative;z-index:2;width:min(100% - (var(--pad)*2), var(--maxw));margin-inline:auto}
+.hero__title{
+  font-size:clamp(2.5rem,6.6vw,5.1rem);
+  font-weight:800;line-height:1.02;letter-spacing:-.04em;
+  margin:0 0 1.65rem;max-width:16ch;
+}
+.hero__title span{display:block}
+.hero__title-accent{color:var(--lime)}
+.hero__copy{
+  font-size:clamp(1rem,1.5vw,1.16rem);
+  color:rgba(255,255,255,.78);
+  max-width:56ch;line-height:1.72;
+}
+.hero__actions{display:flex;flex-wrap:wrap;gap:.85rem;margin-top:2.4rem}
+.hero__proof{
+  display:inline-flex;align-items:center;gap:.7rem;
+  margin-top:3rem;padding:.65rem 1.15rem .65rem .85rem;
+  border:1px solid rgba(255,255,255,.16);border-radius:100px;
+  font-size:.815rem;font-weight:500;color:rgba(255,255,255,.82);
+  background:rgba(255,255,255,.04);
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+}
+.hero__proof-dot{
+  width:7px;height:7px;border-radius:50%;background:var(--lime);flex:none;
+  box-shadow:0 0 0 0 rgba(139,195,74,.6);
+  animation:pulseDot 2.6s infinite;
+}
+@keyframes pulseDot{
+  0%{box-shadow:0 0 0 0 rgba(139,195,74,.55)}
+  70%{box-shadow:0 0 0 9px rgba(139,195,74,0)}
+  100%{box-shadow:0 0 0 0 rgba(139,195,74,0)}
+}
+.hero__scroll{
+  position:absolute;left:50%;bottom:1.9rem;transform:translateX(-50%);
+  z-index:3;width:26px;height:44px;border-radius:100px;
+  border:1.5px solid rgba(255,255,255,.28);
+  display:grid;justify-items:center;padding-top:7px;
+  transition:border-color .3s;
+}
+.hero__scroll:hover{border-color:rgba(255,255,255,.6)}
+.hero__scroll span{
+  width:3px;height:9px;border-radius:2px;background:var(--lime);
+  animation:scrollDot 2s var(--ease) infinite;
+}
+@keyframes scrollDot{
+  0%{transform:translateY(0);opacity:0}
+  25%{opacity:1}
+  75%{transform:translateY(15px);opacity:1}
+  100%{transform:translateY(17px);opacity:0}
+}
+.hero-art__rings{transform-origin:560px 430px;animation:spin 120s linear infinite}
+.hero-art__sheets{transform-origin:560px 430px;animation:floaty 14s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+
+/* ============================================================
+   9. MARQUEE STRIP
+   ============================================================ */
+.strip{
+  background:var(--forest);color:#fff;
+  border-top:1px solid rgba(255,255,255,.08);
+  border-bottom:1px solid rgba(255,255,255,.08);
+  overflow:hidden;padding-block:1.05rem;
+}
+.strip__track{
+  display:flex;gap:2.5rem;width:max-content;
+  animation:marquee 42s linear infinite;
+}
+.strip:hover .strip__track{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.strip__item{
+  display:inline-flex;align-items:center;gap:2.5rem;
+  font-size:.775rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;
+  color:rgba(255,255,255,.66);white-space:nowrap;
+}
+.strip__item::after{
+  content:"";width:5px;height:5px;border-radius:50%;background:var(--lime);opacity:.8;
+}
+
+/* ============================================================
+   10. EDITORIAL SPLIT
+   ============================================================ */
+.split{
+  display:grid;gap:clamp(2.5rem,5vw,5rem);
+  align-items:center;
+}
+@media(min-width:900px){
+  .split{grid-template-columns:1fr 1fr}
+  .split--reverse .split__media{order:2}
+}
+.split__media{position:relative}
+.media-frame{
+  position:relative;border-radius:var(--r-lg);overflow:hidden;
+  background:var(--gray);aspect-ratio:4/3.4;
+  box-shadow:0 40px 80px -50px rgba(18,60,50,.65);
+}
+.media-frame svg{width:100%;height:100%;object-fit:cover}
+.media-label{
+  position:absolute;left:1.25rem;top:1.25rem;
+  background:rgba(255,255,255,.94);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  padding:.5rem .95rem;border-radius:100px;
+  font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--forest);
+}
+.media-stat{
+  position:absolute;right:-.5rem;bottom:-1.75rem;
+  background:var(--forest);color:#fff;
+  padding:1.35rem 1.65rem;border-radius:var(--r-md);
+  box-shadow:0 30px 60px -30px rgba(18,60,50,.85);
+  border:1px solid rgba(255,255,255,.1);
+}
+.media-stat strong{
+  display:block;font-family:'Manrope',sans-serif;font-size:2.25rem;
+  font-weight:800;line-height:1;letter-spacing:-.04em;color:var(--lime);
+}
+.media-stat span{
+  display:block;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.62);margin-top:.5rem;
+}
+@media(max-width:560px){
+  .media-stat{right:0;bottom:-1rem;padding:1rem 1.2rem}
+  .media-stat strong{font-size:1.7rem}
+}
+
+.stat-row{
+  display:flex;flex-wrap:wrap;gap:2.5rem 3.25rem;
+  margin-top:2.5rem;padding-top:2.25rem;border-top:1px solid var(--line);
+}
+.stat-row__item strong{
+  display:block;font-family:'Manrope',sans-serif;font-size:1.6rem;
+  font-weight:800;letter-spacing:-.03em;color:var(--forest);
+}
+.stat-row__item span{font-size:.79rem;color:var(--muted);letter-spacing:.02em}
+
+/* ============================================================
+   11. PRODUCT RAIL & CARDS
+   ============================================================ */
+.rail-wrap{position:relative}
+.rail{
+  display:flex;gap:1.35rem;
+  overflow-x:auto;overflow-y:hidden;
+  scroll-snap-type:x mandatory;
+  padding-bottom:1.1rem;
+  scrollbar-width:none;
+  -ms-overflow-style:none;
+  scroll-behavior:smooth;
+}
+.rail::-webkit-scrollbar{display:none}
+.rail > *{flex:0 0 clamp(268px, 31vw, 372px);scroll-snap-align:start}
+
+.rail-nav{display:flex;gap:.6rem;justify-content:flex-end;margin-bottom:1.6rem}
+.rail-btn{
+  width:48px;height:48px;border-radius:50%;
+  border:1px solid var(--line-strong);background:transparent;color:var(--char);
+  display:grid;place-items:center;cursor:pointer;
+  transition:background .3s,color .3s,border-color .3s,transform .3s var(--ease);
+}
+.rail-btn:hover:not(:disabled){background:var(--forest);color:#fff;border-color:var(--forest);transform:translateY(-2px)}
+.rail-btn:disabled{opacity:.3;cursor:not-allowed}
+
+.pcard{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--r-md);
+  overflow:hidden;
+  transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .4s;
+  display:flex;flex-direction:column;height:100%;
+}
+.pcard:hover{
+  transform:translateY(-6px);
+  box-shadow:0 34px 60px -40px rgba(18,60,50,.6);
+  border-color:rgba(18,60,50,.22);
+}
+.pcard__link{display:flex;flex-direction:column;height:100%}
+.art{
+  position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--gray);
+}
+.art svg{width:100%;height:100%;transition:transform 1s var(--ease-out)}
+.pcard:hover .art svg{transform:scale(1.06)}
+.art::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 55%,rgba(18,60,50,.06));
+  pointer-events:none;
+}
+.pcard__body{
+  padding:1.4rem 1.5rem 1.6rem;
+  display:flex;flex-direction:column;flex:1;gap:.5rem;
+}
+.pcard__cat{
+  font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--green);opacity:.85;
+}
+.pcard__title{
+  font-family:'Manrope',sans-serif;font-size:1.12rem;font-weight:700;
+  letter-spacing:-.02em;color:var(--char);line-height:1.28;
+}
+.pcard__desc{font-size:.855rem;color:var(--muted);line-height:1.62;flex:1}
+.pcard__cta{
+  display:inline-flex;align-items:center;gap:.45rem;
+  font-size:.8rem;font-weight:600;color:var(--forest);
+  margin-top:.85rem;padding-top:.9rem;border-top:1px solid var(--line);
+  transition:gap .3s var(--ease),color .3s;
+}
+.pcard:hover .pcard__cta{gap:.75rem;color:var(--green)}
+
+/* ============================================================
+   12. DARK CAPABILITY SECTION
+   ============================================================ */
+.grid-4{
+  display:grid;gap:1px;background:var(--line-light);
+  border:1px solid var(--line-light);border-radius:var(--r-md);
+  overflow:hidden;
+}
+@media(min-width:640px){.grid-4{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.grid-4{grid-template-columns:repeat(4,1fr)}}
+.pillar{
+  background:var(--forest);padding:2rem 1.65rem 2.2rem;
+  transition:background-color .45s var(--ease);
+  position:relative;
+}
+.pillar:hover{background:rgba(36,118,83,.28)}
+.pillar__num{
+  font-family:'Manrope',sans-serif;font-size:.72rem;font-weight:800;
+  letter-spacing:.14em;color:var(--lime);opacity:.85;display:block;margin-bottom:1.5rem;
+}
+.pillar__title{
+  font-size:1.05rem;font-weight:700;color:#fff;margin-bottom:.7rem;letter-spacing:-.015em;
+}
+.pillar__text{font-size:.855rem;color:rgba(238,243,239,.62);line-height:1.7}
+
+/* Process */
+.process{position:relative;margin-top:clamp(3rem,6vw,4.5rem);--p:0}
+.process__line{
+  position:relative;height:1.5px;background:rgba(255,255,255,.14);
+  border-radius:2px;margin-bottom:2.5rem;overflow:hidden;
+}
+.process__fill{
+  position:absolute;inset:0 auto 0 0;width:calc(var(--p) * 100%);
+  background:linear-gradient(90deg,var(--green),var(--lime));
+  border-radius:2px;
+  transition:width .18s linear;
+}
+.process__steps{display:grid;gap:2rem}
+@media(min-width:720px){.process__steps{grid-template-columns:repeat(4,1fr);gap:1.5rem}}
+.process__step{position:relative}
+.process__dot{
+  width:11px;height:11px;border-radius:50%;background:var(--lime);
+  margin-bottom:1.2rem;box-shadow:0 0 0 4px rgba(139,195,74,.14);
+}
+.process__step h4{
+  font-size:.95rem;font-weight:700;color:#fff;margin-bottom:.45rem;letter-spacing:-.01em;
+}
+.process__step p{font-size:.82rem;color:rgba(238,243,239,.58);line-height:1.65}
+.process__note{
+  margin-top:2.5rem;font-size:.78rem;color:rgba(238,243,239,.4);
+  font-style:italic;
+}
+
+/* ============================================================
+   13. INDUSTRIES
+   ============================================================ */
+.ind-grid{
+  display:grid;gap:1.25rem;
+}
+@media(min-width:640px){.ind-grid{grid-template-columns:1fr 1fr}}
+@media(min-width:1080px){.ind-grid{grid-template-columns:repeat(4,1fr)}}
+.ind-card{
+  position:relative;border-radius:var(--r-md);overflow:hidden;
+  background:var(--forest);color:#fff;min-height:340px;
+  display:flex;flex-direction:column;justify-content:flex-end;
+  padding:1.65rem;
+  transition:transform .55s var(--ease),box-shadow .55s var(--ease);
+  isolation:isolate;
+}
+.ind-card:hover{transform:translateY(-6px);box-shadow:0 36px 66px -40px rgba(18,60,50,.75)}
+.ind-card__bg{position:absolute;inset:0;z-index:-2}
+.ind-card__bg svg{width:100%;height:100%}
+.ind-card::after{
+  content:"";position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(180deg,rgba(11,39,31,.15) 0%,rgba(11,39,31,.72) 55%,rgba(11,39,31,.95) 100%);
+  transition:opacity .5s;
+}
+.ind-card h3{font-size:1.05rem;margin-bottom:.55rem;letter-spacing:-.015em;line-height:1.3}
+.ind-card p{
+  font-size:.83rem;color:rgba(255,255,255,.68);line-height:1.62;
+  max-height:0;opacity:0;overflow:hidden;
+  transition:max-height .55s var(--ease),opacity .4s var(--ease),margin .5s var(--ease);
+}
+.ind-card:hover p,.ind-card:focus-within p{max-height:140px;opacity:1;margin-top:.2rem}
+@media(hover:none){.ind-card p{max-height:140px;opacity:1}}
+.ind-card__tags{
+  display:flex;flex-wrap:wrap;gap:.35rem;margin-top:1rem;
+}
+.ind-card__tag{
+  font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;
+  padding:.28rem .6rem;border-radius:100px;
+  border:1px solid rgba(255,255,255,.22);color:rgba(255,255,255,.72);
+}
+
+/* ============================================================
+   14. WHY LIST
+   ============================================================ */
+.why{display:grid;gap:0;border-top:1px solid var(--line)}
+@media(min-width:900px){.why{grid-template-columns:1fr 1fr;column-gap:4.5rem}}
+.why__item{
+  display:grid;grid-template-columns:auto 1fr;gap:1.35rem;
+  padding:1.85rem 0;border-bottom:1px solid var(--line);
+}
+.why__num{
+  font-family:'Manrope',sans-serif;font-size:.72rem;font-weight:800;
+  letter-spacing:.12em;color:var(--green);opacity:.5;padding-top:.35rem;
+}
+.why__item h3{font-size:1rem;margin-bottom:.4rem;letter-spacing:-.015em}
+.why__item p{font-size:.865rem;color:var(--muted);line-height:1.66;margin:0}
+
+/* ============================================================
+   15. EXPORT SECTION
+   ============================================================ */
+.export-visual{
+  position:relative;border-radius:var(--r-lg);overflow:hidden;
+  background:var(--forest-2);aspect-ratio:16/11;
+  border:1px solid rgba(255,255,255,.1);
+}
+.export-visual svg{width:100%;height:100%}
+.route-dash{
+  stroke-dasharray:5 9;
+  animation:dashMove 3.4s linear infinite;
+}
+@keyframes dashMove{to{stroke-dashoffset:-56}}
+@media (prefers-reduced-motion: reduce){.route-dash{animation:none}}
+
+/* ============================================================
+   16. PRIVATE LABEL + WIZARD
+   ============================================================ */
+.pl{
+  background:
+    radial-gradient(90% 120% at 12% 10%, rgba(36,118,83,.55), transparent 60%),
+    var(--forest);
+  color:#fff;
+}
+.pl__inner{display:grid;gap:clamp(2.5rem,5vw,4.5rem)}
+@media(min-width:980px){.pl__inner{grid-template-columns:1fr 1fr;align-items:start}}
+.pl__actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+
+.wizard{
+  background:rgba(255,255,255,.055);
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:var(--r-lg);
+  padding:1.85rem;
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+}
+.wizard__head{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1.5rem}
+.wizard__title{font-size:.95rem;font-weight:700;letter-spacing:-.01em}
+.wizard__count{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);font-weight:600}
+.wizard__bar{height:2px;background:rgba(255,255,255,.14);border-radius:2px;overflow:hidden;margin-bottom:1.75rem}
+.wizard__bar span{
+  display:block;height:100%;background:var(--lime);border-radius:2px;
+  transition:width .45s var(--ease);
+}
+.wizard__step{display:none}
+.wizard__step.is-active{display:block;animation:riseIn .5s var(--ease-out) both}
+.wizard__q{font-size:.9rem;font-weight:600;margin-bottom:1rem;color:rgba(255,255,255,.92)}
+.wizard__opts{display:grid;gap:.5rem}
+.wizard__opt{
+  text-align:left;padding:.75rem 1rem;border-radius:10px;
+  border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.03);
+  color:rgba(255,255,255,.84);font-size:.855rem;cursor:pointer;
+  transition:background .25s,border-color .25s,color .25s,transform .25s var(--ease);
+}
+.wizard__opt:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.3);transform:translateX(3px)}
+.wizard__opt[aria-pressed="true"]{
+  background:var(--lime);border-color:var(--lime);color:var(--forest-2);font-weight:600;
+}
+.wizard__nav{display:flex;gap:.6rem;margin-top:1.6rem}
+.wizard__nav .btn{flex:1}
+.wizard__skip{
+  display:block;width:100%;margin-top:.9rem;background:none;border:0;
+  color:rgba(255,255,255,.45);font-size:.76rem;cursor:pointer;
+  text-decoration:underline;text-underline-offset:3px;
+}
+.wizard__skip:hover{color:rgba(255,255,255,.8)}
+.wizard__fields{display:grid;gap:.7rem}
+.wizard__summary{
+  background:rgba(0,0,0,.18);border-radius:10px;padding:1rem 1.15rem;
+  font-size:.82rem;color:rgba(255,255,255,.72);line-height:1.8;
+}
+.wizard__summary b{color:#fff;font-weight:600}
+
+/* ============================================================
+   17. FAQ
+   ============================================================ */
+.faq{border-top:1px solid var(--line)}
+.faq__item{border-bottom:1px solid var(--line)}
+.faq__q{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:1.5rem;
+  padding:1.5rem 0;background:none;border:0;cursor:pointer;text-align:left;
+  font-family:'Manrope',sans-serif;font-size:1.02rem;font-weight:600;
+  color:var(--char);letter-spacing:-.015em;
+  transition:color .3s;
+}
+.faq__q:hover{color:var(--green)}
+.faq__icon{
+  flex:none;width:30px;height:30px;border-radius:50%;
+  border:1px solid var(--line-strong);display:grid;place-items:center;
+  transition:transform .45s var(--ease),background .3s,border-color .3s;
+}
+.faq__item.is-open .faq__icon{transform:rotate(45deg);background:var(--forest);border-color:var(--forest)}
+.faq__item.is-open .faq__icon svg{stroke:#fff}
+.faq__a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .5s var(--ease)}
+.faq__item.is-open .faq__a{grid-template-rows:1fr}
+.faq__a > div{overflow:hidden}
+.faq__a p{padding:0 3.5rem 1.65rem 0;font-size:.9rem;color:var(--muted);line-height:1.75;max-width:76ch}
+
+/* ============================================================
+   18. FINAL CTA
+   ============================================================ */
+.final-cta{
+  position:relative;overflow:hidden;
+  background:var(--forest-2);color:#fff;
+  padding-block:clamp(4.5rem,9vw,8rem);
+}
+.final-cta__bg{position:absolute;inset:0;opacity:.55}
+.final-cta__bg svg{width:100%;height:100%}
+.final-cta__inner{position:relative;z-index:2;text-align:center;max-width:820px;margin-inline:auto}
+.final-cta h2{font-size:clamp(2rem,5vw,3.6rem);letter-spacing:-.035em;margin-bottom:1.35rem}
+.final-cta p{color:rgba(255,255,255,.72);font-size:clamp(.95rem,1.2vw,1.08rem);max-width:58ch;margin-inline:auto}
+.final-cta__actions{display:flex;flex-wrap:wrap;gap:.85rem;justify-content:center;margin-top:2.4rem}
+
+/* ============================================================
+   19. FOOTER
+   ============================================================ */
+.footer{background:#0A241D;color:rgba(255,255,255,.62);padding-block:clamp(3.5rem,6vw,5.5rem) 2rem}
+.footer__grid{display:grid;gap:2.75rem}
+@media(min-width:720px){.footer__grid{grid-template-columns:1.4fr 1fr 1fr}}
+@media(min-width:1080px){.footer__grid{grid-template-columns:1.5fr .8fr 1fr 1fr}}
+.footer .logo{color:#fff;margin-bottom:1.35rem}
+.footer__tag{
+  font-size:.86rem;line-height:1.7;max-width:30ch;color:rgba(255,255,255,.55);
+}
+.footer__h{
+  font-family:'Manrope',sans-serif;font-size:.72rem;font-weight:700;
+  letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.92);
+  margin-bottom:1.15rem;
+}
+.footer__links{display:grid;gap:.6rem}
+.footer__links a{
+  font-size:.855rem;color:rgba(255,255,255,.58);
+  transition:color .25s,transform .25s var(--ease);
+  display:inline-block;
+}
+.footer__links a:hover{color:var(--lime);transform:translateX(3px)}
+.footer__contact{
+  margin-top:1.5rem;padding-top:1.35rem;border-top:1px solid rgba(255,255,255,.1);
+  display:grid;gap:.7rem;font-size:.82rem;color:rgba(255,255,255,.58);
+}
+.footer__contact a{transition:color .25s}
+.footer__contact a:hover{color:var(--lime)}
+.footer__contact-row{display:flex;gap:.6rem;align-items:flex-start}
+.footer__contact-row svg{flex:none;margin-top:3px;opacity:.55}
+.footer__placeholder{
+  display:inline-block;font-size:.82rem;
+  padding:.2rem .55rem;border-radius:6px;
+  border:1px dashed rgba(255,255,255,.28);
+  color:rgba(255,255,255,.45);
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+.footer__bottom{
+  margin-top:3.25rem;padding-top:1.75rem;
+  border-top:1px solid rgba(255,255,255,.1);
+  display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center;
+  font-size:.78rem;color:rgba(255,255,255,.4);
+}
+.footer__bottom nav{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer__bottom a{transition:color .25s}
+.footer__bottom a:hover{color:var(--lime)}
+
+/* ============================================================
+   20. INNER PAGE HERO
+   ============================================================ */
+.page-hero{
+  position:relative;background:var(--forest-2);color:#fff;
+  padding-block:calc(var(--hdr) + clamp(3.5rem,7vw,6rem)) clamp(3rem,6vw,5rem);
+  overflow:hidden;
+}
+.page-hero__bg{position:absolute;inset:0;opacity:.6}
+.page-hero__bg svg{width:100%;height:100%}
+.page-hero__inner{position:relative;z-index:2}
+.page-hero h1{
+  font-size:clamp(2.1rem,5.2vw,4rem);letter-spacing:-.035em;
+  max-width:18ch;line-height:1.05;
+}
+.page-hero p{
+  color:rgba(255,255,255,.72);font-size:clamp(.95rem,1.3vw,1.1rem);
+  max-width:62ch;margin-top:1.35rem;line-height:1.72;
+}
+.breadcrumb{
+  display:flex;flex-wrap:wrap;gap:.55rem;align-items:center;
+  font-size:.76rem;color:rgba(255,255,255,.5);margin-bottom:1.5rem;
+}
+.breadcrumb a:hover{color:var(--lime)}
+.breadcrumb span{opacity:.4}
+
+/* ============================================================
+   21. PRODUCTS PAGE — FILTERS + GRID
+   ============================================================ */
+.filters{
+  display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;
+  padding:1.25rem 0 2.25rem;
+}
+.chip{
+  padding:.6rem 1.15rem;border-radius:100px;
+  border:1px solid var(--line-strong);background:transparent;
+  font-size:.82rem;font-weight:500;color:var(--muted);cursor:pointer;
+  transition:all .3s var(--ease);white-space:nowrap;
+}
+.chip:hover{border-color:var(--forest);color:var(--forest);transform:translateY(-1px)}
+.chip.is-active{background:var(--forest);border-color:var(--forest);color:#fff;font-weight:600}
+
+.search{
+  position:relative;margin-left:auto;min-width:240px;flex:1 1 240px;max-width:340px;
+}
+.search input{
+  width:100%;padding:.72rem 1rem .72rem 2.6rem;
+  border-radius:100px;border:1px solid var(--line-strong);
+  background:var(--white);font-size:.85rem;font-family:inherit;color:var(--char);
+  transition:border-color .3s,box-shadow .3s;
+}
+.search input:focus{outline:none;border-color:var(--green);box-shadow:0 0 0 3px rgba(36,118,83,.13)}
+.search svg{position:absolute;left:1rem;top:50%;transform:translateY(-50%);opacity:.42}
+
+.pgrid{display:grid;gap:1.35rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,288px),1fr))}
+.pgrid .pcard.hide{display:none}
+.empty-state{
+  padding:4rem 1rem;text-align:center;color:var(--muted);font-size:.92rem;
+  border:1px dashed var(--line-strong);border-radius:var(--r-md);
+}
+
+/* ============================================================
+   22. PRODUCT DETAIL
+   ============================================================ */
+.pd-top{display:grid;gap:clamp(2rem,4vw,3.5rem);align-items:start}
+@media(min-width:960px){.pd-top{grid-template-columns:1.05fr 1fr}}
+.pd-art{
+  border-radius:var(--r-lg);overflow:hidden;background:var(--gray);
+  aspect-ratio:4/3;position:relative;
+  box-shadow:0 40px 80px -55px rgba(18,60,50,.7);
+}
+.pd-art svg{width:100%;height:100%}
+.pd-meta{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.2rem}
+.pd-badge{
+  font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  padding:.35rem .75rem;border-radius:100px;
+  background:rgba(36,118,83,.1);color:var(--green);
+}
+.pd h1{font-size:clamp(1.9rem,4vw,2.9rem);letter-spacing:-.03em;margin-bottom:1.1rem}
+.pd-lead{font-size:1rem;color:var(--muted);line-height:1.75}
+
+.spec-table{width:100%;border-collapse:collapse;margin-top:1rem}
+.spec-table th,.spec-table td{
+  text-align:left;padding:.95rem .5rem;font-size:.875rem;
+  border-bottom:1px solid var(--line);vertical-align:top;
+}
+.spec-table th{
+  font-weight:600;color:var(--char);width:38%;
+  font-family:'Manrope',sans-serif;letter-spacing:-.01em;
+}
+.spec-table td{color:var(--muted)}
+.spec-note{font-size:.76rem;color:var(--muted);opacity:.8;margin-top:1rem;font-style:italic}
+
+.two-col{display:grid;gap:clamp(2rem,4vw,4rem)}
+@media(min-width:900px){.two-col{grid-template-columns:1fr 1fr}}
+.list-check{display:grid;gap:.85rem;margin-top:1.2rem}
+.list-check li{
+  display:flex;gap:.75rem;font-size:.9rem;color:var(--muted);line-height:1.6;
+}
+.list-check li::before{
+  content:"";flex:none;width:18px;height:18px;border-radius:50%;
+  background:rgba(139,195,74,.18);margin-top:3px;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23247653' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+  background-size:11px;background-position:center;background-repeat:no-repeat;
+}
+
+/* ============================================================
+   23. FORMS
+   ============================================================ */
+.form-card{
+  background:var(--white);border:1px solid var(--line);
+  border-radius:var(--r-lg);padding:clamp(1.5rem,3.5vw,2.75rem);
+  box-shadow:0 40px 90px -60px rgba(18,60,50,.55);
+}
+.field{display:grid;gap:.45rem;margin-bottom:1.15rem}
+.field label{
+  font-size:.79rem;font-weight:600;letter-spacing:.02em;color:var(--char);
+}
+.field label .req{color:#B4453C}
+.field input,.field select,.field textarea{
+  width:100%;padding:.82rem 1rem;
+  border-radius:10px;border:1px solid var(--line-strong);
+  background:var(--off);color:var(--char);
+  font-family:inherit;font-size:.885rem;
+  transition:border-color .25s,box-shadow .25s,background .25s;
+}
+.field textarea{resize:vertical;min-height:120px;line-height:1.6}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--green);background:var(--white);
+  box-shadow:0 0 0 3px rgba(36,118,83,.12);
+}
+.field input[aria-invalid="true"],.field select[aria-invalid="true"],.field textarea[aria-invalid="true"]{
+  border-color:#C0504A;background:#FDF6F5;
+}
+.field__err{font-size:.75rem;color:#B4453C;min-height:0;display:none}
+.field.has-error .field__err{display:block}
+.field__hint{font-size:.73rem;color:var(--muted);opacity:.85}
+.form-row{display:grid;gap:1.15rem}
+@media(min-width:640px){.form-row--2{grid-template-columns:1fr 1fr}}
+.form-section-title{
+  font-family:'Manrope',sans-serif;font-size:.75rem;font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--green);
+  margin:2rem 0 1.1rem;padding-top:1.4rem;border-top:1px solid var(--line);
+}
+.form-section-title:first-of-type{margin-top:0;padding-top:0;border-top:0}
+
+.form-status{
+  margin-top:1.35rem;padding:1.15rem 1.35rem;border-radius:12px;
+  font-size:.865rem;line-height:1.65;display:none;
+}
+.form-status.is-visible{display:block;animation:riseIn .45s var(--ease-out) both}
+.form-status--ok{background:rgba(36,118,83,.1);border:1px solid rgba(36,118,83,.28);color:var(--forest)}
+.form-status--err{background:#FDF1F0;border:1px solid rgba(180,69,60,.3);color:#8E3B35}
+.form-status--info{background:rgba(139,195,74,.12);border:1px solid rgba(139,195,74,.4);color:#2F5230}
+.form-status pre{
+  white-space:pre-wrap;font-family:ui-monospace,Menlo,monospace;
+  font-size:.775rem;background:rgba(0,0,0,.05);padding:.85rem;border-radius:8px;
+  margin-top:.75rem;max-height:230px;overflow:auto;
+}
+
+/* ============================================================
+   24. CONTACT DETAILS
+   ============================================================ */
+.contact-details{display:grid;gap:1.5rem}
+.contact-item{
+  display:grid;grid-template-columns:40px 1fr;gap:1rem;align-items:start;
+  padding-bottom:1.4rem;border-bottom:1px solid var(--line);
+}
+.contact-item:last-child{border-bottom:0;padding-bottom:0}
+.contact-item__icon{
+  width:40px;height:40px;border-radius:11px;flex:none;
+  background:rgba(36,118,83,.1);color:var(--green);
+  display:grid;place-items:center;
+}
+.contact-item__label{
+  font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--green);font-weight:600;margin-bottom:.3rem;
+}
+.contact-item__value{
+  font-size:.95rem;color:var(--char);font-weight:500;line-height:1.6;
+  transition:color .25s;
+}
+a.contact-item__value:hover{color:var(--green)}
+.contact-item__sub{font-size:.82rem;color:var(--muted);margin-top:.2rem}
+
+/* ============================================================
+   25. MISC
+   ============================================================ */
+.notice{
+  display:flex;gap:.75rem;align-items:flex-start;
+  padding:1rem 1.15rem;border-radius:12px;
+  background:rgba(36,118,83,.07);border:1px solid rgba(36,118,83,.18);
+  font-size:.82rem;color:var(--forest);line-height:1.65;
+}
+.notice strong{font-weight:600}
+.center{text-align:center}
+.mt-lg{margin-top:clamp(2.5rem,5vw,4rem)}
+.mt-md{margin-top:2rem}
+
+@media(max-width:560px){
+  :root{--hdr:72px}
+  .btn{padding:.85rem 1.35rem;font-size:.875rem}
+  .hero__actions .btn{flex:1 1 100%}
+}
+</style>
+</head>
+
+<body>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><div class="scroll-progress__bar" id="scrollBar"></div></div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="header__inner">
+    <a href="#/" class="logo" aria-label="Satyu Polypack — Home">
+      <span class="logo__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#0B271F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8.5 12 4l8 4.5v7L12 20l-8-4.5z"/>
+          <path d="M12 12v8"/>
+        </svg>
+      </span>
+      <span class="logo__text">
+        <span class="logo__name">SATYU</span>
+        <span class="logo__sub">POLYPACK</span>
+      </span>
+    </a>
+
+    <nav class="nav" id="primaryNav" aria-label="Primary">
+      <div class="nav__item"><a class="nav__link" href="#/" data-route="/">Home</a></div>
+      <div class="nav__item"><a class="nav__link" href="#/about" data-route="/about">About Us</a></div>
+      <div class="nav__item" id="navProducts">
+        <a class="nav__link" href="#/products" data-route="/products" aria-haspopup="true" aria-expanded="false">
+          Products
+          <svg class="nav__caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </a>
+        <div class="mega" role="menu" aria-label="Product categories" id="megaMenu"></div>
+      </div>
+      <div class="nav__item"><a class="nav__link" href="#/manufacturing" data-route="/manufacturing">Manufacturing</a></div>
+      <div class="nav__item"><a class="nav__link" href="#/industries" data-route="/industries">Industries</a></div>
+      <div class="nav__item"><a class="nav__link" href="#/contact" data-route="/contact">Contact</a></div>
+    </nav>
+
+    <div class="header__actions">
+      <a href="#/contact" class="btn btn--primary btn--sm" id="headerCta">Request a Quote</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Mobile navigation" hidden>
+  <nav class="drawer__nav" aria-label="Mobile">
+    <a class="drawer__link" href="#/">Home <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="drawer__link" href="#/about">About Us <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="drawer__link" href="#/products">Products <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="drawer__link" href="#/manufacturing">Manufacturing <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="drawer__link" href="#/industries">Industries <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a class="drawer__link" href="#/contact">Contact <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </nav>
+  <div class="drawer__foot">
+    <a href="#/contact" class="btn btn--lime btn--block">Request a Quote</a>
+    <a href="#/products" class="btn btn--ghost btn--block">Explore Products</a>
+    <div class="drawer__contact" id="drawerContact"></div>
+    <p class="drawer__note">Manufacturing Packaging Solutions.<br>Serving Global Markets.</p>
+  </div>
+</div>
+
+<main id="app"></main>
+
+<footer class="footer" id="siteFooter"></footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+/* ============================================================
+   CONFIGURATION
+   ------------------------------------------------------------
+   Verified business details. To enable real form submission,
+   set quoteEndpoint to a working, server-validated endpoint.
+   ============================================================ */
+const CONFIG = {
+  company: 'Satyu Polypack',
+  address: 'Daman, India',
+  email: 'satyupolypack@gmail.com',
+  phone: '+91 98256 03124',
+  phoneHref: 'tel:+919825603124',
+  whatsapp: '919825603124',          // wa.me format (digits only)
+  whatsappHref: 'https://wa.me/919825603124',
+  quoteEndpoint: ''                  // ← required before form can submit
+};
+
+/* ============================================================
+   DATA
+   ============================================================ */
+const PRODUCTS = [
+  {
+    slug: 'plastic-bags',
+    name: 'Plastic Bags',
+    cat: 'Plastic Packaging',
+    art: 'plastic',
+    tagline: 'Flexible plastic bags for retail, grocery, commercial, and general-purpose packaging.',
+    overview: 'Flexible plastic bags manufactured for retail, grocery, commercial, and general-purpose packaging. Available in flat, carrier, and other common formats, with configurations aligned to your intended application and market.',
+    applications: ['Retail checkout and carry-out', 'Grocery and convenience stores', 'Commercial and institutional use', 'General-purpose packaging and distribution'],
+    configurations: ['Flat bags', 'Carrier / T-shirt format', 'Custom dimensions and thickness', 'Custom print where available'],
+    materials: 'HDPE and LDPE grades selected according to the required strength, clarity, and end application.',
+    customization: ['Dimensions and bag format', 'Material and thickness (gauge)', 'Colour and opacity', 'Printing where available', 'Carton and case configuration']
+  },
+  {
+    slug: 'trash-can-liners',
+    name: 'Trash Can Liners',
+    cat: 'Waste Management',
+    art: 'liners',
+    tagline: 'Waste liners for janitorial, institutional, household, and commercial applications.',
+    overview: 'Waste liners produced for janitorial, institutional, household, and commercial applications. Liner formats, roll configurations, and packing options can be aligned to the requirements of your distribution channel.',
+    applications: ['Janitorial and sanitation supply', 'Institutional and facility maintenance', 'Commercial cleaning and waste handling', 'Household and retail multipacks'],
+    configurations: ['Roll format', 'Flat / coreless formats', 'Custom dimensions', 'Custom carton and case packing'],
+    materials: 'HDPE, LDPE, and blended film grades depending on the required strength and application.',
+    customization: ['Liner dimensions and thickness', 'Colour and opacity', 'Roll count and pack format', 'Carton configuration', 'Private-label artwork where applicable']
+  },
+  {
+    slug: 'drawstring-garbage-bags',
+    name: 'Drawstring Garbage Bags',
+    cat: 'Waste Management',
+    art: 'drawstring',
+    tagline: '13-gallon and 33-gallon drawstring bags designed for convenient waste collection and disposal.',
+    overview: 'Drawstring garbage bags offered in 13-gallon and 33-gallon formats, designed for convenient waste collection and disposal across household, commercial, and institutional settings.',
+    applications: ['Kitchen and household waste', 'Commercial waste collection', 'Institutional and facility use', 'Retail multipack programmes'],
+    configurations: ['13-gallon format', '33-gallon format', 'Additional sizes on request', 'White, translucent, and black film options'],
+    materials: 'Film grades selected according to the required drawstring strength and load performance for the intended application.',
+    customization: ['Bag dimensions and capacity', 'Film thickness', 'Colour', 'Pack count and carton configuration', 'Private-label packaging']
+  },
+  {
+    slug: 'ice-bags',
+    name: 'Cotton Drawstring Ice Bags',
+    cat: 'Ice Packaging',
+    art: 'ice',
+    tagline: 'Specialised ice packaging bags for ice producers, convenience-store suppliers, and wholesale distribution.',
+    overview: 'Specialised ice packaging bags with cotton drawstring closures, produced for ice producers, convenience-store suppliers, and wholesale distribution channels.',
+    applications: ['Ice producers and packagers', 'Convenience-store supply', 'Wholesale distribution', 'Retail ice sales'],
+    configurations: ['Cotton drawstring closure', 'Custom bag dimensions', 'Printed or unprinted where available', 'Custom case packing'],
+    materials: 'Clear film grades suited to ice packaging, selected according to the required clarity and strength.',
+    customization: ['Bag dimensions', 'Film thickness', 'Print and branding where available', 'Carton configuration']
+  },
+  {
+    slug: 'produce-rolls',
+    name: 'LDPE &amp; HDPE Produce Rolls',
+    cat: 'Produce Packaging',
+    art: 'rolls',
+    tagline: 'Perforated produce bags on rolls for grocery stores, supermarkets, and fresh-produce departments.',
+    overview: 'Perforated produce bags on rolls for grocery stores, supermarkets, and fresh-produce departments. Roll format, perforation, and core specifications can be aligned with your dispensing requirements.',
+    applications: ['Supermarket produce departments', 'Grocery and convenience stores', 'Fresh-produce packing', 'Bulk distribution to retail chains'],
+    configurations: ['Roll format', 'Perforated bags', 'Core and coreless options', 'Custom roll length and bag count'],
+    materials: 'LDPE and HDPE film grades depending on the required clarity, strength, and dispensing behaviour.',
+    customization: ['Bag dimensions', 'Film thickness', 'Perforation pattern', 'Roll length and count', 'Carton configuration']
+  },
+  {
+    slug: 'thermal-paper',
+    name: 'Thermal Paper',
+    cat: 'Thermal Paper',
+    art: 'thermal',
+    tagline: 'Thermal paper rolls for point-of-sale systems, cash registers, payment terminals, and compatible receipt printers.',
+    overview: 'Thermal paper rolls for point-of-sale systems, cash registers, payment terminals, and compatible receipt printers. Roll width, core size, and pack configuration can be aligned with your printer requirements and distribution channel.',
+    applications: ['Point-of-sale and retail', 'Payment terminals', 'Hospitality and foodservice', 'Banking and service counters'],
+    configurations: ['Multiple roll widths', 'Core size options', 'Custom pack counts', 'Custom carton configuration'],
+    materials: 'Thermal paper grades selected according to printer compatibility and application requirements.',
+    customization: ['Roll width and diameter', 'Core size', 'Pack count and shrink configuration', 'Carton configuration', 'Private-label packaging']
+  },
+  {
+    slug: 'paper-bags',
+    name: 'Kraft &amp; Twisted Handle Paper Bags',
+    cat: 'Paper Packaging',
+    art: 'paper',
+    tagline: 'Paper packaging solutions for grocery, retail, foodservice, and commercial distribution.',
+    overview: 'Paper packaging solutions for grocery, retail, foodservice, and commercial distribution, including natural brown kraft bags, SOS bags, and twisted-handle shopping bags.',
+    applications: ['Grocery and retail', 'Foodservice and takeaway', 'Retail shopping and carry-out', 'Commercial distribution'],
+    configurations: ['SOS bags', 'Flat paper bags', 'Twisted-handle shopping bags', 'Custom dimensions and gussets'],
+    materials: 'Kraft and other paper grades selected according to the required strength and application.',
+    customization: ['Bag dimensions and gusset', 'Paper grade and weight', 'Print and branding where available', 'Carton configuration']
+  }
+];
+
+const CATEGORIES = ['All', 'Plastic Packaging', 'Waste Management', 'Ice Packaging', 'Produce Packaging', 'Thermal Paper', 'Paper Packaging'];
+
+const INDUSTRIES = [
+  {
+    title: 'Packaging Distributors',
+    text: 'A broad portfolio of packaging products for wholesale distribution and commercial customers.',
+    tags: ['Plastic bags', 'Liners', 'Thermal paper'],
+    art: 'dist'
+  },
+  {
+    title: 'Janitorial &amp; Sanitation Suppliers',
+    text: 'Waste liners and garbage bags for cleaning, maintenance, institutional, and commercial supply channels.',
+    tags: ['Trash liners', 'Drawstring bags'],
+    art: 'jani'
+  },
+  {
+    title: 'Grocery &amp; Convenience-Store Suppliers',
+    text: 'Plastic bags, produce rolls, thermal paper, ice bags, and other relevant retail consumables.',
+    tags: ['Produce rolls', 'Ice bags', 'Thermal paper'],
+    art: 'grocery'
+  },
+  {
+    title: 'Retail, Foodservice &amp; Private-Label Businesses',
+    text: 'Paper bags and other packaging products tailored to applicable commercial requirements.',
+    tags: ['Paper bags', 'Private label'],
+    art: 'retail'
+  }
+];
+
+const FAQS = [
+  {
+    q: 'What products does Satyu Polypack manufacture?',
+    a: 'Our product portfolio includes plastic bags, trash can liners, 13-gallon and 33-gallon drawstring bags, cotton drawstring ice bags, LDPE and HDPE produce rolls, thermal paper, kraft paper bags, and twisted-handle paper bags.'
+  },
+  {
+    q: 'Does Satyu Polypack work with wholesalers and distributors?',
+    a: 'The company focuses on B2B relationships with importers, wholesalers, distributors, and commercial supply businesses.'
+  },
+  {
+    q: 'Can products be customised?',
+    a: 'Customisation options can include dimensions, materials, thickness, colours, printing, and packaging formats, depending on the product and manufacturing requirements.'
+  },
+  {
+    q: 'Are private-label orders available?',
+    a: 'Private-label inquiries can be discussed based on the selected product, specifications, order quantity, and applicable production requirements.'
+  },
+  {
+    q: 'How can I request pricing?',
+    a: 'Visitors can submit a quote request with their product requirements, specifications, estimated quantities, destination market, and contact information.'
+  },
+  {
+    q: 'What information should I provide for a quotation?',
+    a: 'Product category, dimensions, material or thickness requirements where applicable, packing preferences, quantity, destination, and any branding requirements are useful starting points.'
+  }
+];
+
+/* ============================================================
+   SVG ART — abstract material studies per product category
+   ============================================================ */
+const ART = {
+  plastic: () => `
+  <svg viewBox="0 0 480 360" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <rect width="480" height="360" fill="#E9EEE8"/>
+    <circle cx="392" cy="66" r="128" fill="#DDE7DC" opacity=".8"/>
+    <circle cx="66" cy="320" r="90" fill="#E1EAE1" opacity=".7"/>
+    <g transform="rotate(-9 240 190)">
+      <rect x="118" y="92" width="136" height="188" rx="11" fill="#fff" stroke="#123C32" stroke-opacity=".16" stroke-width="2"/>
+      <path d="M146 92V76a40 40 0 0 1 80 0v16" fill="none" stroke="#123C32" stroke-opacity=".2" stroke-width="3"/>
+    </g>
+    <g transform="rotate(7 300 190)">
+      <rect x="222" y="106" width="136" height="188" rx="11" fill="#fff" opacity=".82" stroke="#123C32" stroke-opacity=".14" stroke-width="2"/>
+      <path d="M250 106V90a40 40 0 0 1 80 0v16" fill="none" stroke="#123C32" stroke-opacity=".16" stroke-width="3"/>
+    </g>
+    <line x1="52" y1="308" x2="128" y2="308" stroke="#8BC34A" stroke-width="5" stroke-linecap="round"/>
+  </svg>`,
+
+  liners: () => `
+  <svg viewBox="0 0 480 360" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <rect width="480" height="360" fill="#E7EDE9"/>
+    <circle cx="404" cy="300" r="120" fill="#DEE8E1" opacity=".75"/>
+    <g transform="rotate(-11 240 180)">
+      <rect x="118" y="132" width="248" height="106" rx="53" fill="#fff" stroke="#123C32" stroke-opacity=".15" stroke-width="2"/>
+      <ellipse cx="118" cy="185" rx="23" ry="53" fill="#F3F7F3" stroke="#123C32" stroke-opacity=".15" stroke-width="2"/>
+      <ellipse cx="118" cy="185" rx="8" ry="20" fill="#123C32" opacity=".13"/>
+      <path d="M366 152c38 14 56 44 50 84" fill="none" stroke="#8BC34A" stroke-width="4.5" stroke-linecap="round"/>
+    </g>
+    <line x1="56" y1="86" x2="140" y2="86" stroke="#8BC34A" stroke-width="5" stroke-linecap="round" opacity=".85"/>
+  </svg>`,
+
+  drawstring: () => `
+  <svg viewBox="0 0 480 360" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <rect width="480" height="360" fill="#E8EEE9"/>
+    <circle cx="88" cy="70" r="110" fill="#DFE9E2" opacity=".8"/>
+    <path d="M158 118h164l20 176a12 12 0 0 1-12 13H150a12 12 0 0 1-12-13z"
+          fill="#fff" stroke="#123C32" stroke-opacity=".16" stroke-width="2"/>
+    <path d="M158 118h164" stroke="#123C32" stroke-opacity=".2" stroke-width="3"/>
+    <path d="M158 118c0-18 36-30 82-30s82 12 82 30" fill="none" stroke="#123C32" stroke-opacity=".18" stroke-width="3"/>
+    <circle cx="186" cy="126" r="9" fill="none" stroke="#8BC34A" stroke-width="3.5"/>
+    <circle cx="294" cy="126" r="9" fill="none" stroke="#8BC34A" stroke-width="3.5"/>
+    <line x1="200" y1="200" x2="280" y2="200" stroke="#123C32" stroke-opacity=".1" stroke-width="8" stroke-linecap="round"/>
+    <line x1="200" y1="226" x2="256" y2="226" stroke="#123C32" stroke-opacity=".07" stroke-width="8" stroke-linecap="round"/>
+  </svg>`,
+
+  ice: () => `
+  <svg viewBox="0 0 480 360" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <rect width="480" height="360" fill="#E6EEEE"/>
+    <circle cx="398" cy="82" r="112" fill="#DCE8E8" opacity=".8"/>
+    <rect x="136" y="86" width="208" height="210" rx="16" fill="#FBFDFC" stroke="#123C32" stroke-opacity=".16" stroke-width="2"/>
+    <path d="M136 96c14 12 34 20 56 20s42-8 56-20M248 96c14 12 34 20 56 20s42-8 56-20" fill="none" stroke="#123C32" stroke-opacity=".12" stroke-width="2.5"/>
+    <g fill="#D7E7E7" stroke="#123C32" stroke-opacity=".12" stroke-width="1.5">
+      <rect x="168" y="140" width="40" height="40" rx="6" transform="rotate(-12 188 160)"/>
+      <rect x="228" y="152" width="44" height="44" rx="6" transform="rotate(14 250 174)"/>
+      <rect x="178" y="204" width="46" height="46" rx="6" transform="rotate(8 201 227)"/>
+      <rect x="244" y="222" width="38" height="38" rx="6" transform="rotate(-16 263 241)"/>
+    </g>
+    <line x1="136" y1="316" x2="344" y2="316" stroke="#8BC34A" stroke-width="5" stroke-linecap="round"/>
+  </svg>`,
+
+  rolls: () => `
+  <svg viewBox="0 0 480 360" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <rect width="480" height="360" fill="#E9EFEA"/>
+    <circle cx="72" cy="300" r="118" fill="#DFE9E2" opacity=".8"/>
+    <g transform="rotate(-8 240 170)">
+      <rect x="96" y="112" width="288" height="112" rx="56" fill="#fff" stroke="#123C32" stroke-opacity=".15" stroke-width="2"/>
+      <ellipse cx="96" cy="168" rx="24" ry="56" fill="#F4F8F4" stroke="#123C32" stroke-opacity=".15" stroke-width="2"/>
+      <ellipse cx="96" cy="168" rx="9" ry="22" fill="#123C32" opacity=".12"/>
+      <g fill="#123C32" opacity=".16">
+        <circle cx="140" cy="168" r="3.4"/><circle cx="170" cy="168" r="3.4"/>
+        <circle cx="200" cy="168" r="3.4"/><circle cx="230" cy="168" r="3.4"/>
+        <circle cx="260" cy="168" r="3.4"/><circle cx="290" cy="168" r="3.4"/>
+        <circle cx="320" cy="168" r="3.4"/><circle cx="350" cy="168" r="3.4"/>
+      </g>
+    </g>
+    <path d="M120 288c60 26 160 26 232-4" fill="none" stroke="#8BC34A" stroke-width="4.5" stroke-linecap="round"/>
+  </svg>`,
+
+  thermal: () => `
+  <svg viewBox="0 0 480 360" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <rect width="480" height="360" fill="#EAEFEA"/>
+    <circle cx="410" cy="290" r="118" fill="#E0E9E2" opacity=".8"/>
+    <g transform="rotate(-14 180 150)">
+      <rect x="86" y="98" width="190" height="104" rx="52" fill="#fff" stroke="#123C32" stroke-opacity=".15" stroke-width="2"/>
+      <ellipse cx="276" cy="150" rx="22" ry="52" fill="#F6F9F6" stroke="#123C32" stroke-opacity=".15" stroke-width="2"/>
+      <ellipse cx="276" cy="150" rx="8" ry="20" fill="#123C32" opacity=".12"/>
+    </g>
+    <g transform="rotate(9 320 220)">
+      <rect x="236" y="168" width="176" height="96" rx="48" fill="#fff" opacity=".88" stroke="#123C32" stroke-opacity=".13" stroke-width="2"/>
+      <ellipse cx="236" cy="216" rx="20" ry="48" fill="#F6F9F6" stroke="#123C32" stroke-opacity=".13" stroke-width="2"/>
+      <ellipse cx="236" cy="216" rx="7" ry="18" fill="#123C32" opacity=".1"/>
+    </g>
+    <path d="M150 300c26-42 66-46 92-14s58 28 84-10" fill="none" stroke="#8BC34A" stroke-width="4.5" stroke-linecap="round"/>
+  </svg>`,
+
+  paper: () => `
+  <svg viewBox="0 0 480 360" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <rect width="480" height="360" fill="#EFEDE6"/>
+    <circle cx="96" cy="72" r="112" fill="#E6E2D7" opacity=".85"/>
+    <path d="M160 128h160l18 172a11 11 0 0 1-11 12H153a11 11 0 0 1-11-12z"
+          fill="#D9C9A8" stroke="#8A7451" stroke-opacity=".28" stroke-width="2"/>
+    <path d="M160 128h160" stroke="#8A7451" stroke-opacity=".35" stroke-width="3"/>
+    <path d="M168 128c0-26 30-44 72-44s72 18 72 44" fill="none" stroke="#8A7451" stroke-opacity=".5" stroke-width="4" stroke-linecap="round"/>
+    <line x1="196" y1="200" x2="284" y2="200" stroke="#8A7451" stroke-opacity=".22" stroke-width="9" stroke-linecap="round"/>
+    <line x1="196" y1="228" x2="256" y2="228" stroke="#8A7451" stroke-opacity=".16" stroke-width="9" stroke-linecap="round"/>
+    <line x1="60" y1="308" x2="136" y2="308" stroke="#8BC34A" stroke-width="5" stroke-linecap="round"/>
+  </svg>`,
+
+  dist: () => `
+  <svg viewBox="0 0 480 360" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <rect width="480" height="360" fill="#1B4A3E"/>
+    <g fill="none" stroke="#8BC34A" stroke-opacity=".22" stroke-width="1.6">
+      <rect x="70" y="200" width="120" height="90" rx="6"/>
+      <rect x="200" y="160" width="120" height="130" rx="6"/>
+      <rect x="330" y="220" width="90" height="70" rx="6"/>
+    </g>
+    <g stroke="#8BC34A" stroke-opacity=".35" stroke-width="1.6" stroke-linecap="round">
+      <path d="M130 200v-46h180v46" fill="none"/>
+      <path d="M310 200v-70" fill="none"/>
+    </g>
+    <circle cx="130" cy="146" r="6" fill="#8BC34A" opacity=".7"/>
+    <circle cx="310" cy="122" r="6" fill="#8BC34A" opacity=".7"/>
+  </svg>`,
+
+  jani: () => `
+  <svg viewBox="0 0 480 360" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <rect width="480" height="360" fill="#17453A"/>
+    <g fill="none" stroke="#8BC34A" stroke-opacity=".22" stroke-width="1.6">
+      <circle cx="240" cy="180" r="104"/>
+      <circle cx="240" cy="180" r="66"/>
+      <path d="M240 76v208M136 180h208"/>
+    </g>
+    <rect x="196" y="136" width="88" height="88" rx="10" fill="none" stroke="#8BC34A" stroke-opacity=".5" stroke-width="2"/>
+    <path d="M212 180h56M240 152v56" stroke="#8BC34A" stroke-opacity=".55" stroke-width="2" stroke-linecap="round"/>
+  </svg>`,
+
+  grocery: () => `
+  <svg viewBox="0 0 480 360" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <rect width="480" height="360" fill="#1A473C"/>
+    <g fill="none" stroke="#8BC34A" stroke-opacity=".22" stroke-width="1.6">
+      <path d="M80 250h320"/>
+      <path d="M120 250v-70a60 60 0 0 1 120 0v70"/>
+      <path d="M280 250v-46a46 46 0 0 1 92 0v46"/>
+    </g>
+    <circle cx="120" cy="176" r="7" fill="#8BC34A" opacity=".6"/>
+    <circle cx="240" cy="176" r="7" fill="#8BC34A" opacity=".6"/>
+    <circle cx="280" cy="200" r="7" fill="#8BC34A" opacity=".6"/>
+    <circle cx="372" cy="200" r="7" fill="#8BC34A" opacity=".6"/>
+  </svg>`,
+
+  retail: () => `
+  <svg viewBox="0 0 480 360" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+    <rect width="480" height="360" fill="#164237"/>
+    <g fill="none" stroke="#8BC34A" stroke-opacity=".22" stroke-width="1.6">
+      <path d="M150 260h180l-16-96H166z"/>
+      <path d="M186 164v-30a54 54 0 0 1 108 0v30"/>
+      <path d="M150 260h180"/>
+    </g>
+    <circle cx="240" cy="134" r="8" fill="#8BC34A" opacity=".55"/>
+    <line x1="90" y1="290" x2="390" y2="290" stroke="#8BC34A" stroke-opacity=".3" stroke-width="1.6"/>
+  </svg>`
+};
+
+function artFor(key){ return (ART[key] || ART.plastic)(); }
+
+/* ============================================================
+   SMALL HELPERS
+   ============================================================ */
+const arrow = (s = 16) => `<svg width="${s}" height="${s}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>`;
+const plusIcon = () => `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>`;
+
+const ICON = {
+  mail: `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>`,
+  phone: `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.5 5.7 2 2 0 0 1 6.5 3.5Z"/></svg>`,
+  whatsapp: `<svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.4 15.1L2 22l5.05-1.6A9.9 9.9 0 1 0 12.04 2Zm0 1.8a8.1 8.1 0 0 1 6.87 12.38 8.1 8.1 0 0 1-10.9 2.5l-.36-.22-2.9.92.9-2.8-.24-.38A8.1 8.1 0 0 1 12.04 3.8Zm-3.1 4.1c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.66 2.64 4.02 3.58 1.96.78 2.36.62 2.79.58.42-.04 1.36-.56 1.55-1.1.19-.54.19-1 .13-1.1-.06-.1-.22-.16-.46-.28-.24-.12-1.36-.67-1.57-.75-.21-.08-.36-.12-.51.12-.15.24-.59.75-.72.9-.13.15-.26.17-.48.06-.22-.11-.93-.34-1.77-1.09-.66-.58-1.1-1.3-1.23-1.52-.13-.22-.01-.34.1-.45.1-.1.24-.27.36-.4.12-.13.16-.22.24-.37.08-.15.04-.28-.02-.4-.06-.11-.53-1.28-.73-1.75-.19-.46-.38-.4-.52-.4h-.44Z"/></svg>`,
+  pin: `<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>`
+};
+
+function ph(label){
+  return `<span class="footer__placeholder">[ ${label} ]</span>`;
+}
+
+function sectionHead(eyebrow, title, lede, opts = {}){
+  return `
+  <div class="section-head ${opts.split ? 'section-head--split' : ''}">
+    <div>
+      <p class="eyebrow ${opts.light ? 'eyebrow--light' : ''} reveal">${eyebrow}</p>
+      <h2 class="h2 reveal" style="--d:80ms">${title}</h2>
+    </div>
+    ${lede ? `<p class="lede reveal" style="--d:160ms">${lede}</p>` : ''}
+  </div>`;
+}
+
+/* ============================================================
+   CONTACT DETAILS BLOCK (shared by contact page / footer / drawer)
+   ============================================================ */
+function contactDetailsHTML(light = false){
+  const emailRow = CONFIG.email
+    ? `<a class="contact-item__value" href="mailto:${CONFIG.email}">${CONFIG.email}</a>`
+    : ph('add verified email');
+
+  const phoneRow = CONFIG.phone
+    ? `<a class="contact-item__value" href="${CONFIG.phoneHref}">${CONFIG.phone}</a>`
+    : ph('add verified phone');
+
+  const waRow = CONFIG.whatsapp
+    ? `<a class="contact-item__value" href="${CONFIG.whatsappHref}" target="_blank" rel="noopener">${CONFIG.phone}</a>
+       <div class="contact-item__sub">WhatsApp available for business inquiries</div>`
+    : ph('add verified WhatsApp');
+
+  const addressRow = CONFIG.address
+    ? `<div class="contact-item__value">${CONFIG.company}<br>${CONFIG.address}</div>`
+    : ph('add verified address');
+
+  return `
+  <div class="contact-details">
+    <div class="contact-item">
+      <span class="contact-item__icon" aria-hidden="true">${ICON.mail}</span>
+      <div>
+        <div class="contact-item__label">Email Address</div>
+        ${emailRow}
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <span class="contact-item__icon" aria-hidden="true">${ICON.whatsapp}</span>
+      <div>
+        <div class="contact-item__label">WhatsApp / Phone</div>
+        ${waRow}
+        <div class="contact-item__sub" style="margin-top:.35rem">Call: ${phoneRow}</div>
+      </div>
+    </div>
+
+    <div class="contact-item">
+      <span class="contact-item__icon" aria-hidden="true">${ICON.pin}</span>
+      <div>
+        <div class="contact-item__label">Our Location</div>
+        ${addressRow}
+      </div>
+    </div>
+  </div>`;
+}
+
+/* ============================================================
+   SHARED BLOCKS
+   ============================================================ */
+function heroArt(){
+  return `
+  <svg class="hero-art" viewBox="0 0 900 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <defs>
+      <radialGradient id="hg1" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#247653" stop-opacity=".8"/>
+        <stop offset="60%" stop-color="#123C32" stop-opacity=".3"/>
+        <stop offset="100%" stop-color="#123C32" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+    <rect width="900" height="900" fill="#0B271F"/>
+    <circle cx="560" cy="430" r="440" fill="url(#hg1)"/>
+    <g class="hero-art__rings" fill="none" stroke="#8BC34A" stroke-opacity=".26">
+      <circle cx="560" cy="430" r="340" stroke-width="1.4"/>
+      <circle cx="560" cy="430" r="262" stroke-width="1.4" stroke-dasharray="2 12"/>
+      <circle cx="560" cy="430" r="184" stroke-width="1.4"/>
+    </g>
+    <g class="hero-art__sheets" fill="none">
+      <rect x="380" y="250" width="150" height="196" rx="14" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".16" stroke-width="1.4" transform="rotate(-14 455 348)"/>
+      <rect x="596" y="336" width="150" height="196" rx="14" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".13" stroke-width="1.4" transform="rotate(11 671 434)"/>
+    </g>
+    <circle cx="560" cy="430" r="98" fill="#0B271F" stroke="#8BC34A" stroke-opacity=".38" stroke-width="1.6"/>
+    <circle cx="560" cy="430" r="32" fill="#123C32" stroke="#8BC34A" stroke-opacity=".55" stroke-width="1.6"/>
+    <g stroke="#ffffff" stroke-opacity=".07" stroke-width="1">
+      <path d="M0 700h900M0 160h900M140 0v900M760 0v900"/>
+    </g>
+  </svg>`;
+}
+
+function pageHero({ eyebrow, title, text, crumb }){
+  return `
+  <section class="page-hero">
+    <div class="page-hero__bg" aria-hidden="true">
+      <svg viewBox="0 0 900 460" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="ph1" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#247653" stop-opacity=".85"/>
+            <stop offset="100%" stop-color="#123C32" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="900" height="460" fill="#0B271F"/>
+        <circle cx="720" cy="180" r="360" fill="url(#ph1)"/>
+        <g fill="none" stroke="#8BC34A" stroke-opacity=".18" stroke-width="1.3">
+          <circle cx="720" cy="180" r="250"/>
+          <circle cx="720" cy="180" r="180" stroke-dasharray="2 11"/>
+          <circle cx="720" cy="180" r="110"/>
+        </g>
+      </svg>
+    </div>
+    <div class="container page-hero__inner">
+      ${crumb ? `<nav class="breadcrumb" aria-label="Breadcrumb">${crumb}</nav>` : ''}
+      <p class="eyebrow eyebrow--light" data-anim style="--d:.05s">${eyebrow}</p>
+      <h1 data-anim style="--d:.14s">${title}</h1>
+      ${text ? `<p data-anim style="--d:.24s">${text}</p>` : ''}
+    </div>
+  </section>`;
+}
+
+function finalCTA(){
+  return `
+  <section class="final-cta">
+    <div class="final-cta__bg" aria-hidden="true">
+      <svg viewBox="0 0 900 400" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <radialGradient id="fc1" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#247653" stop-opacity=".55"/>
+            <stop offset="100%" stop-color="#0B271F" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="900" height="400" fill="#0B271F"/>
+        <circle cx="450" cy="200" r="380" fill="url(#fc1)"/>
+        <g fill="none" stroke="#8BC34A" stroke-opacity=".14" stroke-width="1.2">
+          <circle cx="450" cy="200" r="300"/>
+          <circle cx="450" cy="200" r="220" stroke-dasharray="3 14"/>
+          <circle cx="450" cy="200" r="140"/>
+        </g>
+      </svg>
+    </div>
+    <div class="container final-cta__inner">
+      <p class="eyebrow eyebrow--light reveal" style="justify-content:center">Start a Conversation</p>
+      <h2 class="reveal" style="--d:80ms">Let's Build Your Next Packaging Programme.</h2>
+      <p class="reveal" style="--d:160ms">Tell us what you need to manufacture, package, or source. Our team can review your requirements and discuss the appropriate product options for your business.</p>
+      <div class="final-cta__actions reveal" style="--d:240ms">
+        <a class="btn btn--lime" href="#/contact">Request a Quote ${arrow()}</a>
+        <a class="btn btn--ghost" href="${CONFIG.whatsappHref}" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ============================================================
+   PAGE: HOME
+   ============================================================ */
+function homePage(){
+  return `
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg" data-parallax="0.16">${heroArt()}</div>
+    <div class="hero__veil"></div>
+    <div class="hero__inner">
+      <p class="eyebrow eyebrow--light" data-anim style="--d:.05s">Packaging Manufacturing · International Markets</p>
+      <h1 class="hero__title">
+        <span data-anim style="--d:.16s">Packaging That Moves</span>
+        <span class="hero__title-accent" data-anim style="--d:.3s">Business Forward.</span>
+      </h1>
+      <p class="hero__copy" data-anim style="--d:.45s">
+        From flexible plastic packaging to paper bags and thermal paper, Satyu Polypack manufactures
+        essential products for distributors, wholesalers, and businesses serving markets around the world.
+      </p>
+      <div class="hero__actions" data-anim style="--d:.58s">
+        <a class="btn btn--lime" href="#/products">Explore Our Products ${arrow()}</a>
+        <a class="btn btn--ghost" href="#/contact">Request a Quote</a>
+      </div>
+      <div class="hero__proof" data-anim style="--d:.72s">
+        <span class="hero__proof-dot" aria-hidden="true"></span>
+        Over 8 Years of Overseas-Market Experience
+      </div>
+    </div>
+    <a class="hero__scroll" href="#/" data-scroll="intro" aria-label="Scroll to the next section"><span></span></a>
+  </section>
+
+  <!-- MARQUEE STRIP -->
+  <div class="strip" aria-hidden="true">
+    <div class="strip__track" id="stripTrack"></div>
+  </div>
+
+  <!-- INTRODUCTION -->
+  <section class="section" id="intro">
+    <div class="container split">
+      <div class="split__media reveal">
+        <div class="media-frame">
+          ${ART.rolls()}
+        </div>
+        <span class="media-label">Manufacturing Experience</span>
+        <div class="media-stat">
+          <strong data-count="8" data-suffix="+">8+</strong>
+          <span>Years Serving<br>Overseas Markets</span>
+        </div>
+      </div>
+      <div class="split__body">
+        <p class="eyebrow reveal">The Company</p>
+        <h2 class="h2 reveal" style="--d:80ms">Built on Manufacturing. Connected to Global Markets.</h2>
+        <p class="lede reveal" style="--d:150ms">
+          Satyu Polypack is an established packaging manufacturer with over eight years of experience
+          serving overseas markets. Our diverse product portfolio spans flexible plastic packaging,
+          waste-management products, retail consumables, thermal paper, and paper bags.
+        </p>
+        <p class="lede reveal" style="--d:200ms">
+          We work with importers, wholesalers, distributors, and private-label businesses seeking
+          manufacturing partnerships across multiple packaging categories.
+        </p>
+        <p class="lede reveal" style="--d:250ms">
+          Our approach combines manufacturing experience, product customisation, and a commercial
+          understanding of international B2B requirements.
+        </p>
+        <div class="stat-row reveal" style="--d:320ms">
+          <div class="stat-row__item"><strong>8+ Years</strong><span>Serving overseas markets</span></div>
+          <div class="stat-row__item"><strong>7 Categories</strong><span>Packaging &amp; consumables</span></div>
+          <div class="stat-row__item"><strong>B2B</strong><span>Wholesale &amp; private label</span></div>
+        </div>
+        <div class="mt-md reveal" style="--d:380ms">
+          <a class="link-arrow" href="#/about">More about the company ${arrow(15)}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCT PORTFOLIO -->
+  <section class="section section--gray" id="products-showcase">
+    <div class="container">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="eyebrow reveal">Product Portfolio</p>
+          <h2 class="h2 reveal" style="--d:80ms">A Diverse Portfolio.<br>One Manufacturing Partner.</h2>
+        </div>
+        <p class="lede reveal" style="--d:160ms">
+          Explore packaging and commercial essentials manufactured for a broad range of wholesale
+          and distribution requirements.
+        </p>
+      </div>
+
+      <div class="rail-nav reveal">
+        <button class="rail-btn" id="railPrev" aria-label="Previous products" aria-controls="productRail">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="rail-btn" id="railNext" aria-label="Next products" aria-controls="productRail">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+
+      <div class="rail-wrap">
+        <div class="rail" id="productRail">
+          ${PRODUCTS.map((p, i) => `
+            <article class="pcard reveal" style="--d:${i * 60}ms">
+              <a class="pcard__link" href="#/products/${p.slug}">
+                <div class="art">${artFor(p.art)}</div>
+                <div class="pcard__body">
+                  <span class="pcard__cat">${p.cat}</span>
+                  <h3 class="pcard__title">${p.name}</h3>
+                  <p class="pcard__desc">${p.tagline}</p>
+                  <span class="pcard__cta">Explore ${p.name} ${arrow(14)}</span>
+                </div>
+              </a>
+            </article>
+          `).join('')}
+        </div>
+      </div>
+
+      <div class="mt-md reveal">
+        <a class="btn btn--dark" href="#/products">View all products ${arrow()}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MANUFACTURING & CUSTOMIZATION -->
+  <section class="section section--dark" id="manufacturing">
+    <div class="container">
+      ${sectionHead(
+        'Manufacturing &amp; Customisation',
+        'Manufactured Around Your Requirements.',
+        'Different markets have different packaging requirements. Satyu Polypack works with buyers to align product specifications, packaging formats, and customisation requirements with their intended applications.',
+        { light: true, split: true }
+      )}
+
+      <div class="grid-4 reveal">
+        <div class="pillar">
+          <span class="pillar__num">01</span>
+          <h3 class="pillar__title">Product Specifications</h3>
+          <p class="pillar__text">Configure product dimensions, thickness, materials, colours, and other applicable specifications according to the agreed requirements.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar__num">02</span>
+          <h3 class="pillar__title">Custom Packaging</h3>
+          <p class="pillar__text">Explore suitable packaging formats, case configurations, labelling, and printing options where available.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar__num">03</span>
+          <h3 class="pillar__title">Private-Label Opportunities</h3>
+          <p class="pillar__text">Develop products aligned with distributor-owned brands and private-label programmes, subject to product feasibility and order requirements.</p>
+        </div>
+        <div class="pillar">
+          <span class="pillar__num">04</span>
+          <h3 class="pillar__title">Bulk &amp; Export Orders</h3>
+          <p class="pillar__text">Coordinate manufacturing requirements and export preparation around agreed quantities, packaging specifications, and shipment schedules.</p>
+        </div>
+      </div>
+
+      <div class="process" id="process">
+        <div class="process__line"><span class="process__fill"></span></div>
+        <ol class="process__steps">
+          <li class="process__step">
+            <span class="process__dot" aria-hidden="true"></span>
+            <h4>Product Requirements</h4>
+            <p>Share the product category, application, and market you are sourcing for.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__dot" aria-hidden="true"></span>
+            <h4>Specification Alignment</h4>
+            <p>Align dimensions, materials, thickness, colours, and packing formats.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__dot" aria-hidden="true"></span>
+            <h4>Manufacturing</h4>
+            <p>Produce against the agreed specifications and confirmed order requirements.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__dot" aria-hidden="true"></span>
+            <h4>Packaging &amp; Export Preparation</h4>
+            <p>Coordinate case packing and export preparation around the shipment schedule.</p>
+          </li>
+        </ol>
+        <p class="process__note">An illustrative overview of the process. Actual steps vary by product and order requirements.</p>
+      </div>
+
+      <div class="mt-lg reveal">
+        <a class="btn btn--lime" href="#/manufacturing">Explore Manufacturing ${arrow()}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section class="section" id="industries">
+    <div class="container">
+      ${sectionHead(
+        'Industries We Serve',
+        'Supporting the Businesses That Keep Markets Moving.',
+        'Satyu Polypack supplies packaging and commercial consumables to the trade channels that distribute them.',
+        { split: true }
+      )}
+      <div class="ind-grid">
+        ${INDUSTRIES.map((ind, i) => `
+          <a class="ind-card reveal" href="#/industries" style="--d:${i * 90}ms">
+            <div class="ind-card__bg" aria-hidden="true">${artFor(ind.art)}</div>
+            <h3>${ind.title}</h3>
+            <p>${ind.text}</p>
+            <div class="ind-card__tags">
+              ${ind.tags.map(t => `<span class="ind-card__tag">${t}</span>`).join('')}
+            </div>
+          </a>
+        `).join('')}
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY SATYU -->
+  <section class="section section--white">
+    <div class="container">
+      ${sectionHead(
+        'Why Satyu Polypack',
+        'A Broader Approach to Packaging Manufacturing.',
+        'A multi-category manufacturing partner built around the practical needs of international B2B buyers.',
+        { split: true }
+      )}
+      <div class="why">
+        ${[
+          ['Manufacturing Experience', 'Over eight years of experience serving overseas markets.'],
+          ['Multi-Category Portfolio', 'Plastic packaging, waste liners, ice bags, produce rolls, thermal paper, and paper bags.'],
+          ['Customisation Potential', 'Product configurations and private-label options tailored to agreed specifications.'],
+          ['B2B Focus', 'A business model designed around importers, wholesalers, distributors, and commercial buyers.'],
+          ['Long-Term Partnerships', 'A focus on repeat business, clear communication, and sustained commercial relationships.'],
+          ['International Orientation', 'An export-focused approach to serving customers across overseas markets.']
+        ].map(([t, d], i) => `
+          <div class="why__item reveal" style="--d:${i * 70}ms">
+            <span class="why__num">${String(i + 1).padStart(2, '0')}</span>
+            <div>
+              <h3>${t}</h3>
+              <p>${d}</p>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPORT ORIENTATION -->
+  <section class="section section--dark">
+    <div class="container split split--reverse">
+      <div class="split__media reveal">
+        <div class="export-visual">
+          <svg viewBox="0 0 640 440" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+            <rect width="640" height="440" fill="#0B271F"/>
+            <g stroke="#8BC34A" stroke-opacity=".12" fill="none" stroke-width="1">
+              <path d="M60 120h520M60 200h520M60 280h520M140 60v320M320 60v320M500 60v320"/>
+            </g>
+            <g fill="none" stroke="#8BC34A" stroke-width="2" stroke-opacity=".75" stroke-linecap="round">
+              <path class="route-dash" d="M110 300C200 180 330 300 470 140"/>
+              <path class="route-dash" d="M120 150C260 220 300 120 520 260" style="animation-delay:-1.6s"/>
+            </g>
+            <circle cx="110" cy="300" r="6" fill="#8BC34A"/>
+            <circle cx="470" cy="140" r="6" fill="#8BC34A"/>
+            <circle cx="120" cy="150" r="5" fill="#8BC34A" fill-opacity=".7"/>
+            <circle cx="520" cy="260" r="5" fill="#8BC34A" fill-opacity=".7"/>
+          </svg>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow eyebrow--light reveal">International Business</p>
+        <h2 class="h2 reveal" style="--d:80ms">Manufacturing for Markets Beyond Borders.</h2>
+        <p class="lede reveal" style="--d:150ms">
+          Satyu Polypack works with overseas buyers seeking packaging products for their respective
+          markets. Our product range and B2B approach are designed to support international purchasing
+          relationships, from product specification discussions to coordinated order and shipment
+          requirements.
+        </p>
+        <div class="mt-md reveal" style="--d:220ms">
+          <a class="btn btn--lime" href="#/contact">Discuss Your Requirements ${arrow()}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVATE LABEL + WIZARD -->
+  <section class="section pl" id="private-label">
+    <div class="container pl__inner">
+      <div>
+        <p class="eyebrow eyebrow--light reveal">Private Label &amp; Wholesale</p>
+        <h2 class="h2 reveal" style="--d:80ms">Build Your Packaging Range With Us.</h2>
+        <p class="lede reveal" style="--d:150ms">
+          Whether you are expanding an established product line or developing a private-label range,
+          Satyu Polypack offers a diverse manufacturing portfolio for businesses looking to source
+          packaging and commercial consumables.
+        </p>
+        <p class="lede reveal" style="--d:200ms">
+          Discuss your specifications, expected quantities, packaging requirements, and target market
+          with our team.
+        </p>
+        <div class="pl__actions reveal" style="--d:270ms">
+          <a class="btn btn--lime" href="#/contact">Request a Manufacturing Quote ${arrow()}</a>
+          <a class="btn btn--ghost" href="#/contact">Discuss Your Requirements</a>
+        </div>
+      </div>
+
+      <div class="wizard reveal" style="--d:180ms" id="wizard">
+        <div class="wizard__head">
+          <span class="wizard__title">Quick Inquiry</span>
+          <span class="wizard__count" id="wizCount">Step 1 of 4</span>
+        </div>
+        <div class="wizard__bar"><span id="wizBar" style="width:25%"></span></div>
+
+        <div class="wizard__step is-active" data-step="0">
+          <p class="wizard__q">Which product category are you sourcing?</p>
+          <div class="wizard__opts" data-field="category">
+            ${PRODUCTS.map(p => `<button type="button" class="wizard__opt" aria-pressed="false">${p.name}</button>`).join('')}
+          </div>
+        </div>
+
+        <div class="wizard__step" data-step="1">
+          <p class="wizard__q">What type of requirement is this?</p>
+          <div class="wizard__opts" data-field="type">
+            <button type="button" class="wizard__opt" aria-pressed="false">Bulk / wholesale order</button>
+            <button type="button" class="wizard__opt" aria-pressed="false">Private-label programme</button>
+            <button type="button" class="wizard__opt" aria-pressed="false">Specification discussion</button>
+            <button type="button" class="wizard__opt" aria-pressed="false">Sample or product information</button>
+          </div>
+        </div>
+
+        <div class="wizard__step" data-step="2">
+          <p class="wizard__q">Approximate order quantity or purchasing volume</p>
+          <div class="wizard__fields">
+            <input type="text" id="wizQty" placeholder="e.g. cartons per order, containers per shipment" style="width:100%;padding:.85rem 1rem;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);color:#fff;font-family:inherit;font-size:.88rem" />
+            <p style="font-size:.76rem;color:rgba(255,255,255,.45)">Optional — you can share detailed quantities later.</p>
+          </div>
+        </div>
+
+        <div class="wizard__step" data-step="3">
+          <p class="wizard__q">Review and continue to the full quote form</p>
+          <div class="wizard__summary" id="wizSummary"></div>
+          <p style="font-size:.76rem;color:rgba(255,255,255,.45);margin-top:.9rem">
+            Your selections will be carried into the quote form so you don't have to re-enter them.
+          </p>
+        </div>
+
+        <div class="wizard__nav">
+          <button type="button" class="btn btn--ghost btn--sm" id="wizBack" disabled>Back</button>
+          <button type="button" class="btn btn--lime btn--sm" id="wizNext">Continue ${arrow(14)}</button>
+        </div>
+        <button type="button" class="wizard__skip" id="wizSkip">Skip and go straight to the quote form</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head section-head--split">
+        <div>
+          <p class="eyebrow reveal">Frequently Asked Questions</p>
+          <h2 class="h2 reveal" style="--d:80ms">Answers for Business Buyers.</h2>
+        </div>
+        <p class="lede reveal" style="--d:160ms">
+          Common questions from importers, distributors, and private-label businesses.
+        </p>
+      </div>
+      <div class="faq reveal">
+        ${FAQS.map((f, i) => `
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false" aria-controls="faq-a-${i}" id="faq-q-${i}">
+              <span>${f.q}</span>
+              <span class="faq__icon" aria-hidden="true">${plusIcon()}</span>
+            </button>
+            <div class="faq__a" id="faq-a-${i}" role="region" aria-labelledby="faq-q-${i}">
+              <div><p>${f.a}</p></div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  </section>
+
+  ${finalCTA()}
+  `;
+}
+
+/* ============================================================
+   PAGE: ABOUT
+   ============================================================ */
+function aboutPage(){
+  return `
+  ${pageHero({
+    eyebrow: 'About Satyu Polypack',
+    title: 'Manufacturing Experience. International Perspective.',
+    text: 'Satyu Polypack is a packaging manufacturer with over eight years of experience serving overseas markets. Our product portfolio brings together flexible plastic packaging, waste-management products, retail consumables, thermal paper, and paper bags for commercial and wholesale applications.',
+    crumb: `<a href="#/">Home</a><span>/</span><span style="color:rgba(255,255,255,.8)">About Us</span>`
+  })}
+
+  <section class="section">
+    <div class="container split">
+      <div class="split__media reveal">
+        <div class="media-frame">${ART.liners()}</div>
+        <span class="media-label">Manufacturing Focus</span>
+      </div>
+      <div>
+        <p class="eyebrow reveal">Our Company</p>
+        <h2 class="h2 reveal" style="--d:80ms">A Manufacturer Built Around Product Range.</h2>
+        <p class="lede reveal" style="--d:150ms">
+          Our product portfolio brings together flexible plastic packaging, waste-management products,
+          retail consumables, thermal paper, and paper bags for commercial and wholesale applications.
+        </p>
+        <p class="lede reveal" style="--d:200ms">
+          Rather than specialising in a single category, we operate across a broad set of packaging and
+          consumable lines — allowing distributors and wholesalers to consolidate requirements with a
+          single manufacturing partner.
+        </p>
+        <div class="stat-row reveal" style="--d:260ms">
+          <div class="stat-row__item"><strong>8+ Years</strong><span>Overseas-market experience</span></div>
+          <div class="stat-row__item"><strong>7 Categories</strong><span>Manufacturing portfolio</span></div>
+        </div>
+        <div class="mt-md reveal" style="--d:320ms">
+          <a class="link-arrow" href="#/contact">Speak with our team ${arrow(15)}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container">
+      ${sectionHead(
+        'Our Manufacturing Focus',
+        'Specification-Led Production.',
+        'Products are manufactured against agreed specifications — dimensions, materials, thickness, colours, and packing formats — aligned to the intended application.'
+      )}
+      <div class="grid-4" style="background:var(--line);border-color:var(--line)">
+        ${[
+          ['Specification Alignment', 'Dimensions, materials, thickness, and other applicable parameters agreed with the buyer.'],
+          ['Packaging Formats', 'Case configurations, labelling, and packing options explored according to the requirement.'],
+          ['Customisation', 'Colour, print, and format options applied where available for the product category.'],
+          ['Export Preparation', 'Order and shipment requirements coordinated around agreed quantities and schedules.']
+        ].map(([t, d], i) => `
+          <div class="pillar reveal" style="background:var(--white);--d:${i * 80}ms">
+            <span class="pillar__num" style="color:var(--green)">${String(i + 1).padStart(2, '0')}</span>
+            <h3 class="pillar__title" style="color:var(--char)">${t}</h3>
+            <p class="pillar__text" style="color:var(--muted)">${d}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      ${sectionHead('Our Product Portfolio', 'Seven Categories. One Supplier.', 'A portfolio built around the everyday packaging and consumable requirements of wholesale trade channels.')}
+      <div class="pgrid">
+        ${PRODUCTS.map((p, i) => productCard(p, i)).join('')}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container two-col">
+      <div>
+        <p class="eyebrow eyebrow--light reveal">Serving B2B Markets</p>
+        <h2 class="h2 reveal" style="--d:80ms">Built for Trade Buyers.</h2>
+        <p class="lede reveal" style="--d:150ms">
+          Satyu Polypack focuses on B2B relationships with importers, wholesalers, distributors, and
+          commercial supply businesses. Our commercial approach is oriented around repeat purchasing,
+          clear specification communication, and long-term supply relationships.
+        </p>
+      </div>
+      <div>
+        <p class="eyebrow eyebrow--light reveal">Customisation &amp; Private Label</p>
+        <h2 class="h2 reveal" style="--d:80ms">Your Brand, Our Manufacturing.</h2>
+        <p class="lede reveal" style="--d:150ms">
+          Private-label inquiries can be discussed based on the selected product, specifications, order
+          quantity, and applicable production requirements. Customisation options can include dimensions,
+          materials, thickness, colours, printing, and packaging formats.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split split--reverse">
+      <div class="split__media reveal">
+        <div class="media-frame">${ART.paper()}</div>
+        <span class="media-label">Long-Term Vision</span>
+      </div>
+      <div>
+        <p class="eyebrow reveal">Our Long-Term Vision</p>
+        <h2 class="h2 reveal" style="--d:80ms">Sustained Commercial Relationships.</h2>
+        <p class="lede reveal" style="--d:150ms">
+          Our focus is on repeat business and sustained commercial relationships — supporting buyers as
+          their product ranges and market requirements evolve over time.
+        </p>
+        <p class="lede reveal" style="--d:200ms">
+          We approach each inquiry as the beginning of a supply relationship rather than a single
+          transaction, and aim to align manufacturing decisions with the buyer's market.
+        </p>
+        <div class="mt-md reveal" style="--d:260ms">
+          <a class="btn btn--dark" href="#/contact">Request a Quote ${arrow()}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  ${finalCTA()}
+  `;
+}
+
+/* ============================================================
+   PRODUCT CARD (shared)
+   ============================================================ */
+function productCard(p, i = 0){
+  return `
+  <article class="pcard reveal" data-cat="${p.cat}" data-name="${p.name.replace(/&amp;/g, 'and').toLowerCase()}" style="--d:${Math.min(i, 6) * 60}ms">
+    <a class="pcard__link" href="#/products/${p.slug}">
+      <div class="art">${artFor(p.art)}</div>
+      <div class="pcard__body">
+        <span class="pcard__cat">${p.cat}</span>
+        <h3 class="pcard__title">${p.name}</h3>
+        <p class="pcard__desc">${p.tagline}</p>
+        <span class="pcard__cta">Explore ${p.name} ${arrow(14)}</span>
+      </div>
+    </a>
+  </article>`;
+}
+
+/* ============================================================
+   PAGE: PRODUCTS
+   ============================================================ */
+function productsPage(){
+  return `
+  ${pageHero({
+    eyebrow: 'Product Portfolio',
+    title: 'Packaging Products for Commercial Markets.',
+    text: 'Flexible plastic packaging, waste-management products, ice packaging, produce rolls, thermal paper, and paper bags — manufactured for wholesale and distribution requirements.',
+    crumb: `<a href="#/">Home</a><span>/</span><span style="color:rgba(255,255,255,.8)">Products</span>`
+  })}
+
+  <section class="section">
+    <div class="container">
+      <div class="filters">
+        ${CATEGORIES.map((c, i) => `
+          <button class="chip ${i === 0 ? 'is-active' : ''}" data-filter="${c}" aria-pressed="${i === 0}">${c === 'All' ? 'All Products' : c}</button>
+        `).join('')}
+        <div class="search">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" id="productSearch" placeholder="Search products…" aria-label="Search products by name" />
+        </div>
+      </div>
+
+      <p class="sr-only" role="status" aria-live="polite" id="filterStatus"></p>
+
+      <div class="pgrid" id="productGrid">
+        ${PRODUCTS.map((p, i) => productCard(p, i)).join('')}
+      </div>
+
+      <div class="empty-state" id="emptyState" hidden>
+        No products match your search. Try a different term or <button class="chip" style="display:inline-flex" onclick="document.getElementById('productSearch').value='';document.querySelector('[data-filter=All]').click()">reset filters</button>.
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container two-col">
+      <div>
+        <p class="eyebrow reveal">How to Order</p>
+        <h2 class="h2 reveal" style="--d:80ms">Quotation-Based Supply.</h2>
+        <p class="lede reveal" style="--d:150ms">
+          Products are supplied on a quotation basis rather than as an online retail catalogue.
+          Share your product category, specifications, estimated quantities, and destination market,
+          and our team can review the requirement and discuss suitable manufacturing options.
+        </p>
+        <div class="mt-md reveal" style="--d:200ms">
+          <a class="link-arrow" href="mailto:${CONFIG.email}">${CONFIG.email}</a>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow reveal">What to Include</p>
+        <h2 class="h2 reveal" style="--d:80ms">Useful Starting Points.</h2>
+        <ul class="list-check reveal" style="--d:150ms">
+          <li>Product category and intended application</li>
+          <li>Dimensions, material, and thickness requirements where applicable</li>
+          <li>Packing preferences and case configuration</li>
+          <li>Estimated order quantity and destination market</li>
+          <li>Branding or private-label requirements</li>
+        </ul>
+        <div class="mt-md reveal" style="--d:220ms">
+          <a class="btn btn--dark" href="#/contact">Request a Quote ${arrow()}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  ${finalCTA()}
+  `;
+}
+
+/* ============================================================
+   PAGE: PRODUCT DETAIL
+   ============================================================ */
+function productDetailPage(slug){
+  const p = PRODUCTS.find(x => x.slug === slug);
+  if (!p) return notFoundPage();
+
+  const related = PRODUCTS.filter(x => x.slug !== p.slug).slice(0, 3);
+
+  return `
+  ${pageHero({
+    eyebrow: p.cat,
+    title: p.name,
+    text: p.tagline,
+    crumb: `<a href="#/">Home</a><span>/</span><a href="#/products">Products</a><span>/</span><span style="color:rgba(255,255,255,.8)">${p.name}</span>`
+  })}
+
+  <section class="section pd">
+    <div class="container pd-top">
+      <div class="pd-art reveal">${artFor(p.art)}</div>
+      <div>
+        <div class="pd-meta reveal">
+          <span class="pd-badge">${p.cat}</span>
+          <span class="pd-badge">B2B · Quotation basis</span>
+        </div>
+        <h1 class="reveal" style="--d:60ms">${p.name}</h1>
+        <p class="pd-lead reveal" style="--d:120ms">${p.overview}</p>
+
+        <h2 class="h3 reveal" style="--d:180ms;margin-top:2.5rem">Typical Applications</h2>
+        <ul class="list-check reveal" style="--d:220ms">
+          ${p.applications.map(a => `<li>${a}</li>`).join('')}
+        </ul>
+
+        <div class="mt-lg reveal" style="--d:260ms;display:flex;gap:.75rem;flex-wrap:wrap">
+          <a class="btn btn--primary" href="#/contact?p=${p.slug}">Request a Quote ${arrow()}</a>
+          <a class="btn btn--outline" href="#/contact?p=${p.slug}&label=1">Private-Label Inquiry</a>
+        </div>
+
+        <div class="notice reveal" style="--d:300ms;margin-top:1.5rem">
+          <span aria-hidden="true">✉</span>
+          <span>Prefer email? Send specifications to <a href="mailto:${CONFIG.email}" style="text-decoration:underline">${CONFIG.email}</a> or message us on
+          <a href="${CONFIG.whatsappHref}" target="_blank" rel="noopener" style="text-decoration:underline">WhatsApp</a>.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container two-col">
+      <div>
+        <p class="eyebrow reveal">Available Configurations</p>
+        <h2 class="h2 reveal" style="--d:80ms">Aligned to Your Requirement.</h2>
+        <ul class="list-check reveal" style="--d:150ms">
+          ${p.configurations.map(c => `<li>${c}</li>`).join('')}
+        </ul>
+
+        <h2 class="h3 reveal" style="--d:200ms;margin-top:2.75rem">Material Options</h2>
+        <p class="lede reveal" style="--d:240ms">${p.materials}</p>
+      </div>
+
+      <div>
+        <p class="eyebrow reveal">Specification Overview</p>
+        <h2 class="h2 reveal" style="--d:80ms">Configurable Fields.</h2>
+        <table class="spec-table reveal" style="--d:150ms">
+          <tbody>
+            <tr><th>Product category</th><td>${p.cat}</td></tr>
+            <tr><th>Dimensions</th><td>Configured to your requirement</td></tr>
+            <tr><th>Material / thickness</th><td>Discussed against the intended application</td></tr>
+            <tr><th>Colour &amp; print</th><td>Options available by product — to be agreed</td></tr>
+            <tr><th>Packing / case configuration</th><td>Agreed per order requirements</td></tr>
+            <tr><th>Private label</th><td>Available subject to feasibility and order requirements</td></tr>
+            <tr><th>Minimum order quantity</th><td>Confirmed on quotation</td></tr>
+          </tbody>
+        </table>
+        <p class="spec-note reveal">
+          Final specifications, quantities, and commercial terms are confirmed in writing on quotation.
+        </p>
+
+        <h2 class="h3 reveal" style="--d:200ms;margin-top:2.5rem">Customisation Options</h2>
+        <ul class="list-check reveal" style="--d:240ms">
+          ${p.customization.map(c => `<li>${c}</li>`).join('')}
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      ${sectionHead('Related Categories', 'Explore Other Products', 'Other packaging and consumable categories in the Satyu Polypack portfolio.')}
+      <div class="pgrid">
+        ${related.map((r, i) => productCard(r, i)).join('')}
+      </div>
+    </div>
+  </section>
+
+  ${finalCTA()}
+  `;
+}
+
+/* ============================================================
+   PAGE: MANUFACTURING
+   ============================================================ */
+function manufacturingPage(){
+  return `
+  ${pageHero({
+    eyebrow: 'Manufacturing &amp; Customisation',
+    title: 'Manufactured Around Your Requirements.',
+    text: 'Different markets have different packaging requirements. Satyu Polypack works with buyers to align product specifications, packaging formats, and customisation requirements with their intended applications.',
+    crumb: `<a href="#/">Home</a><span>/</span><span style="color:rgba(255,255,255,.8)">Manufacturing</span>`
+  })}
+
+  <section class="section">
+    <div class="container">
+      ${sectionHead('Capabilities', 'What We Work With Buyers On.', 'Capabilities are applied according to the product category and confirmed order requirements.')}
+      <div class="grid-4" style="background:var(--line);border-color:var(--line)">
+        ${[
+          ['Product Configuration', 'Product dimensions, thickness, materials, colours, and other applicable specifications configured against the agreed requirement.'],
+          ['Material Options', 'Material grades discussed according to the intended application, strength requirement, and market.'],
+          ['Size &amp; Thickness', 'Dimensions and film or paper thickness aligned with the application and packing method.'],
+          ['Colour &amp; Printing', 'Colour and print options applied where available for the selected product category.'],
+          ['Packaging &amp; Cartons', 'Case configurations, labelling, and packing formats explored according to the requirement.'],
+          ['Private-Label Programmes', 'Distributor-owned brands developed subject to product feasibility and order requirements.'],
+          ['Bulk-Order Coordination', 'Manufacturing requirements coordinated around agreed quantities and packaging specifications.'],
+          ['Export Preparation', 'Shipment requirements coordinated around the agreed schedule and documentation.']
+        ].map(([t, d], i) => `
+          <div class="pillar reveal" style="background:var(--white);--d:${i * 60}ms">
+            <span class="pillar__num" style="color:var(--green)">${String(i + 1).padStart(2, '0')}</span>
+            <h3 class="pillar__title" style="color:var(--char);font-size:.98rem">${t}</h3>
+            <p class="pillar__text" style="color:var(--muted)">${d}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      ${sectionHead('Process', 'From Requirement to Shipment.', 'An illustrative overview of how a manufacturing requirement is typically handled.', { light: true, split: true })}
+      <div class="process" id="process">
+        <div class="process__line"><span class="process__fill"></span></div>
+        <ol class="process__steps">
+          <li class="process__step">
+            <span class="process__dot" aria-hidden="true"></span>
+            <h4>Product Requirements</h4>
+            <p>Share the product category, application, and target market.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__dot" aria-hidden="true"></span>
+            <h4>Specification Alignment</h4>
+            <p>Align dimensions, materials, thickness, colours, and packing formats.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__dot" aria-hidden="true"></span>
+            <h4>Manufacturing</h4>
+            <p>Produce against the agreed specifications and confirmed order requirements.</p>
+          </li>
+          <li class="process__step">
+            <span class="process__dot" aria-hidden="true"></span>
+            <h4>Packaging &amp; Export Preparation</h4>
+            <p>Coordinate case packing and export preparation around the shipment schedule.</p>
+          </li>
+        </ol>
+        <p class="process__note">An illustrative overview. Actual steps vary by product and order requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-col">
+      <div>
+        <p class="eyebrow reveal">Private Label</p>
+        <h2 class="h2 reveal" style="--d:80ms">Distributor-Owned Brands.</h2>
+        <p class="lede reveal" style="--d:150ms">
+          Private-label inquiries can be discussed based on the selected product, specifications, order
+          quantity, and applicable production requirements. Where feasible, products can be developed
+          around distributor-owned brands and private-label programmes.
+        </p>
+        <ul class="list-check reveal" style="--d:200ms">
+          <li>Product selected from the existing portfolio</li>
+          <li>Specifications agreed against the intended market</li>
+          <li>Packaging and labelling requirements discussed</li>
+          <li>Feasibility confirmed on quotation</li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow reveal">Bulk &amp; Export</p>
+        <h2 class="h2 reveal" style="--d:80ms">Coordinated Around the Order.</h2>
+        <p class="lede reveal" style="--d:150ms">
+          Manufacturing requirements and export preparation are coordinated around agreed quantities,
+          packaging specifications, and shipment schedules. Buyers are encouraged to share the destination
+          market and any applicable documentation requirements at the inquiry stage.
+        </p>
+        <div class="notice reveal" style="--d:200ms">
+          <span aria-hidden="true">ℹ</span>
+          <span>Specific machinery, production capacity, certifications, and lead times are confirmed on
+          quotation. They are not published as fixed commitments.</span>
+        </div>
+        <div class="mt-md reveal" style="--d:250ms">
+          <a class="btn btn--outline btn--sm" href="${CONFIG.whatsappHref}" target="_blank" rel="noopener">Ask on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--gray">
+    <div class="container">
+      ${sectionHead('Start an Inquiry', 'Tell Us About Your Manufacturing Requirement.', 'Share your product category, specifications, and estimated quantities. Our team can review the requirement and discuss suitable options.')}
+      <div style="max-width:820px">
+        ${quoteFormHTML('', true)}
+      </div>
+    </div>
+  </section>
+
+  ${finalCTA()}
+  `;
+}
+
+/* ============================================================
+   PAGE: INDUSTRIES
+   ============================================================ */
+function industriesPage(){
+  const segments = [
+    {
+      title: 'Packaging Distributors',
+      text: 'A broad portfolio of packaging products for wholesale distribution and commercial customers. Distributors can consolidate multiple categories with a single manufacturing partner.',
+      products: ['Plastic Bags', 'Trash Can Liners', 'Thermal Paper', 'Paper Bags']
+    },
+    {
+      title: 'Janitorial &amp; Sanitation Suppliers',
+      text: 'Waste liners and garbage bags for cleaning, maintenance, institutional, and commercial supply channels, aligned to the pack formats required by the channel.',
+      products: ['Trash Can Liners', 'Drawstring Garbage Bags']
+    },
+    {
+      title: 'Grocery &amp; Convenience-Store Suppliers',
+      text: 'Plastic bags, produce rolls, thermal paper, ice bags, and other relevant retail consumables for stores and the suppliers that serve them.',
+      products: ['Plastic Bags', 'Produce Rolls', 'Thermal Paper', 'Ice Bags']
+    },
+    {
+      title: 'Commercial Supply Wholesalers',
+      text: 'Everyday packaging and consumable lines for commercial supply catalogues, covering waste management, retail consumables, and paper packaging.',
+      products: ['Trash Can Liners', 'Plastic Bags', 'Paper Bags']
+    },
+    {
+      title: 'Retail &amp; Paper Packaging Distributors',
+      text: 'Kraft paper bags, SOS bags, and twisted-handle paper bags for grocery, retail, foodservice, and commercial distribution.',
+      products: ['Paper Bags', 'Plastic Bags']
+    },
+    {
+      title: 'Private-Label Brands',
+      text: 'Product development aligned with distributor-owned brands and private-label programmes, subject to product feasibility and order requirements.',
+      products: ['All Categories']
+    }
+  ];
+
+  return `
+  ${pageHero({
+    eyebrow: 'Industries We Serve',
+    title: 'Supporting the Businesses That Keep Markets Moving.',
+    text: 'Satyu Polypack supplies packaging and commercial consumables to the trade channels that distribute them — from packaging distributors to private-label brands.',
+    crumb: `<a href="#/">Home</a><span>/</span><span style="color:rgba(255,255,255,.8)">Industries</span>`
+  })}
+
+  <section class="section">
+    <div class="container">
+      <div class="ind-grid" style="grid-template-columns:1fr">
+        ${segments.map((s, i) => `
+          <div class="reveal" style="--d:${i * 60}ms;padding:clamp(1.75rem,3.5vw,2.75rem);border:1px solid var(--line);border-radius:var(--r-md);background:var(--white);display:grid;gap:1.5rem">
+            <div style="display:grid;gap:1.5rem;align-items:start" class="ind-row">
+              <div>
+                <span class="pcard__cat">${String(i + 1).padStart(2, '0')} — Segment</span>
+                <h3 style="font-size:clamp(1.15rem,2vw,1.5rem);margin:.5rem 0 .75rem">${s.title}</h3>
+                <p style="font-size:.9rem;color:var(--muted);line-height:1.72;max-width:62ch">${s.text}</p>
+              </div>
+              <div>
+                <p class="eyebrow" style="margin-bottom:.85rem">Relevant Categories</p>
+                <div style="display:flex;flex-wrap:wrap;gap:.45rem">
+                  ${s.products.map(p => `<span style="font-size:.76rem;padding:.35rem .8rem;border-radius:100px;background:rgba(36,118,83,.09);color:var(--green);font-weight:500">${p}</span>`).join('')}
+                </div>
+                <div style="margin-top:1.25rem">
+                  <a class="link-arrow" href="#/products">Browse products ${arrow(14)}</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark">
+    <div class="container">
+      ${sectionHead('Trade Focus', 'A B2B Supply Model.', 'Satyu Polypack focuses on relationships with importers, wholesalers, distributors, and commercial supply businesses.', { light: true })}
+      <div class="grid-4">
+        ${[
+          ['Importers', 'Buyers sourcing packaging products for distribution in their own markets.'],
+          ['Wholesalers', 'Businesses supplying packaging and consumables into trade channels.'],
+          ['Distributors', 'Distributors consolidating multiple packaging categories with one manufacturer.'],
+          ['Private Label', 'Businesses developing product ranges under their own brand.']
+        ].map(([t, d], i) => `
+          <div class="pillar reveal" style="--d:${i * 80}ms">
+            <span class="pillar__num">${String(i + 1).padStart(2, '0')}</span>
+            <h3 class="pillar__title">${t}</h3>
+            <p class="pillar__text">${d}</p>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  </section>
+
+  ${finalCTA()}
+  `;
+}
+
+/* ============================================================
+   QUOTE FORM
+   ============================================================ */
+function quoteFormHTML(preselect = '', compact = false){
+  const opts = PRODUCTS.map(p => `<option value="${p.slug}" ${p.slug === preselect ? 'selected' : ''}>${p.name}</option>`).join('');
+  return `
+  <form class="form-card" id="quoteForm" novalidate>
+    <div class="form-section-title">Contact Details</div>
+    <div class="form-row form-row--2">
+      <div class="field">
+        <label for="q-name">Full name <span class="req">*</span></label>
+        <input id="q-name" name="name" type="text" autocomplete="name" required aria-describedby="err-name" />
+        <span class="field__err" id="err-name">Please enter your full name.</span>
+      </div>
+      <div class="field">
+        <label for="q-company">Company name <span class="req">*</span></label>
+        <input id="q-company" name="company" type="text" autocomplete="organization" required aria-describedby="err-company" />
+        <span class="field__err" id="err-company">Please enter your company name.</span>
+      </div>
+    </div>
+    <div class="form-row form-row--2">
+      <div class="field">
+        <label for="q-email">Business email <span class="req">*</span></label>
+        <input id="q-email" name="email" type="email" autocomplete="email" required aria-describedby="err-email" />
+        <span class="field__err" id="err-email">Please enter a valid business email address.</span>
+      </div>
+      <div class="field">
+        <label for="q-phone">Business phone <span class="field__hint">(optional)</span></label>
+        <input id="q-phone" name="phone" type="tel" autocomplete="tel" />
+      </div>
+    </div>
+
+    <div class="form-section-title">Requirement Details</div>
+    <div class="form-row form-row--2">
+      <div class="field">
+        <label for="q-category">Product category <span class="req">*</span></label>
+        <select id="q-category" name="category" required aria-describedby="err-category">
+          <option value="">Select a category…</option>
+          ${opts}
+          <option value="multiple">Multiple categories</option>
+          <option value="other">Other / not sure</option>
+        </select>
+        <span class="field__err" id="err-category">Please select a product category.</span>
+      </div>
+      <div class="field">
+        <label for="q-country">Country / destination market</label>
+        <input id="q-country" name="country" type="text" autocomplete="country-name" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="q-message">Inquiry message <span class="req">*</span></label>
+      <textarea id="q-message" name="message" required placeholder="Describe the product, application, and what you are looking to source." aria-describedby="err-message"></textarea>
+      <span class="field__err" id="err-message">Please tell us a little about your requirement.</span>
+    </div>
+
+    <div class="form-section-title">Optional Specifications</div>
+    <div class="form-row form-row--2">
+      <div class="field">
+        <label for="q-qty">Estimated order quantity</label>
+        <input id="q-qty" name="quantity" type="text" placeholder="e.g. cartons / containers per order" />
+      </div>
+      <div class="field">
+        <label for="q-dims">Product dimensions</label>
+        <input id="q-dims" name="dimensions" type="text" placeholder="e.g. width × length, gusset" />
+      </div>
+    </div>
+    <div class="form-row form-row--2">
+      <div class="field">
+        <label for="q-material">Material &amp; thickness requirements</label>
+        <input id="q-material" name="material" type="text" placeholder="e.g. LDPE, 30 micron" />
+      </div>
+      <div class="field">
+        <label for="q-packing">Packaging specifications</label>
+        <input id="q-packing" name="packing" type="text" placeholder="e.g. roll count, carton configuration" />
+      </div>
+    </div>
+    <div class="form-row form-row--2">
+      <div class="field">
+        <label for="q-private">Private-label requirement</label>
+        <select id="q-private" name="privateLabel">
+          <option value="">Not specified</option>
+          <option value="yes">Yes — private label required</option>
+          <option value="no">No — standard product</option>
+          <option value="discuss">Would like to discuss</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="q-date">Target delivery date</label>
+        <input id="q-date" name="targetDate" type="date" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="q-file">Specification or reference document <span class="field__hint">(optional — file name only unless a backend is configured)</span></label>
+      <input id="q-file" name="attachment" type="file" accept=".pdf,.doc,.docx,.jpg,.png,.xlsx" />
+    </div>
+
+    <button type="submit" class="btn btn--primary btn--block" id="quoteSubmit" style="margin-top:.5rem">
+      Submit Quote Request ${arrow()}
+    </button>
+    <p class="field__hint" style="margin-top:.9rem;text-align:center">
+      Prefer email? Send the same details to
+      <a href="mailto:${CONFIG.email}" style="text-decoration:underline;color:var(--green)">${CONFIG.email}</a>.
+    </p>
+
+    <div class="form-status" id="quoteStatus" role="status" aria-live="polite"></div>
+  </form>`;
+}
+
+/* ============================================================
+   PAGE: CONTACT
+   ============================================================ */
+function contactPage(preselect = ''){
+  return `
+  ${pageHero({
+    eyebrow: 'Contact / Request a Quote',
+    title: 'Tell Us What Your Business Needs.',
+    text: 'Share your product specifications, estimated quantities, and destination market. Our team can review your requirements and discuss suitable manufacturing options.',
+    crumb: `<a href="#/">Home</a><span>/</span><span style="color:rgba(255,255,255,.8)">Contact</span>`
+  })}
+
+  <section class="section">
+    <div class="container">
+      <div style="display:grid;gap:clamp(2.5rem,5vw,4.5rem);align-items:start" class="contact-layout">
+        <div>
+          <p class="eyebrow reveal">Our Details</p>
+          <h2 class="h2 reveal" style="--d:80ms">Speak Directly With Our Team.</h2>
+          <p class="lede reveal" style="--d:140ms">
+            Reach us by email, phone, or WhatsApp — or use the quote form to share detailed
+            specifications. Required fields are marked; optional fields help us respond with more
+            relevant product options.
+          </p>
+
+          <div class="mt-lg reveal" style="--d:200ms">
+            ${contactDetailsHTML()}
+          </div>
+
+          <div class="reveal" style="--d:260ms;display:flex;gap:.75rem;flex-wrap:wrap;margin-top:2rem">
+            <a class="btn btn--primary btn--sm" href="mailto:${CONFIG.email}">Email Us ${arrow(14)}</a>
+            <a class="btn btn--outline btn--sm" href="${CONFIG.whatsappHref}" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <a class="btn btn--outline btn--sm" href="${CONFIG.phoneHref}">Call ${CONFIG.phone}</a>
+          </div>
+
+          <div class="notice reveal" style="--d:300ms;margin-top:2rem">
+            <span aria-hidden="true">ℹ</span>
+            <span>For urgent requirements, WhatsApp or phone is usually the fastest route to our team.</span>
+          </div>
+
+          <div class="mt-lg reveal" style="--d:340ms">
+            <div class="form-section-title" style="border-top:0;padding-top:0">What Happens Next</div>
+            <ul class="list-check">
+              <li>Our team reviews your product category and specification details.</li>
+              <li>We follow up to clarify any points needed to prepare a quotation.</li>
+              <li>You receive product options and commercial terms for review.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="reveal" style="--d:120ms">
+          ${quoteFormHTML(preselect)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  ${finalCTA()}
+  `;
+}
+
+/* ============================================================
+   PAGE: NOT FOUND
+   ============================================================ */
+function notFoundPage(){
+  return `
+  <section class="page-hero" style="min-height:70vh;display:flex;align-items:center">
+    <div class="container page-hero__inner">
+      <p class="eyebrow eyebrow--light">404</p>
+      <h1>This page could not be found.</h1>
+      <p>The page you are looking for may have moved. Explore our product portfolio or contact our team.</p>
+      <div style="display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2rem">
+        <a class="btn btn--lime" href="#/">Back to Home ${arrow()}</a>
+        <a class="btn btn--ghost" href="#/products">Browse Products</a>
+      </div>
+    </div>
+  </section>`;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+function renderFooter(){
+  document.getElementById('siteFooter').innerHTML = `
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <a href="#/" class="logo" aria-label="Satyu Polypack — Home">
+            <span class="logo__mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#0B271F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 8.5 12 4l8 4.5v7L12 20l-8-4.5z"/><path d="M12 12v8"/>
+              </svg>
+            </span>
+            <span class="logo__text"><span class="logo__name">SATYU</span><span class="logo__sub">POLYPACK</span></span>
+          </a>
+          <p class="footer__tag">Manufacturing Packaging Solutions.<br>Serving Global Markets.</p>
+        </div>
+
+        <div>
+          <h3 class="footer__h">Company</h3>
+          <div class="footer__links">
+            <a href="#/about">About Us</a>
+            <a href="#/manufacturing">Manufacturing</a>
+            <a href="#/industries">Industries We Serve</a>
+            <a href="#/contact">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__h">Products</h3>
+          <div class="footer__links">
+            ${PRODUCTS.map(p => `<a href="#/products/${p.slug}">${p.name}</a>`).join('')}
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer__h">Business Inquiries</h3>
+          <div class="footer__links">
+            <a href="#/contact">Request a Quote</a>
+            <a href="#/contact?label=1">Private-Label Inquiries</a>
+            <a href="#/contact">Wholesale &amp; Distribution</a>
+          </div>
+
+          <div class="footer__contact">
+            <div class="footer__contact-row">
+              <span aria-hidden="true">${ICON.mail}</span>
+              ${CONFIG.email
+                ? `<a href="mailto:${CONFIG.email}">${CONFIG.email}</a>`
+                : ph('add verified email')}
+            </div>
+            <div class="footer__contact-row">
+              <span aria-hidden="true">${ICON.whatsapp}</span>
+              ${CONFIG.phone
+                ? `<a href="${CONFIG.whatsappHref}" target="_blank" rel="noopener">${CONFIG.phone} · WhatsApp</a>`
+                : ph('add verified phone')}
+            </div>
+            <div class="footer__contact-row">
+              <span aria-hidden="true">${ICON.pin}</span>
+              ${CONFIG.address
+                ? `<span>${CONFIG.company}<br>${CONFIG.address}</span>`
+                : ph('add verified address')}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© ${new Date().getFullYear()} Satyu Polypack. All rights reserved.</span>
+        <nav aria-label="Legal">
+          <a href="#/contact">Privacy Policy</a>
+          <a href="#/contact">Terms &amp; Conditions</a>
+        </nav>
+      </div>
+    </div>`;
+}
+
+/* ============================================================
+   DRAWER CONTACT
+   ============================================================ */
+function renderDrawerContact(){
+  const el = document.getElementById('drawerContact');
+  if (!el) return;
+  el.innerHTML = `
+    <a href="mailto:${CONFIG.email}">${CONFIG.email}</a>
+    <a href="${CONFIG.whatsappHref}" target="_blank" rel="noopener">WhatsApp: ${CONFIG.phone}</a>
+    <a href="${CONFIG.phoneHref}">Call: ${CONFIG.phone}</a>
+    <span>${CONFIG.company} · ${CONFIG.address}</span>`;
+}
+
+/* ============================================================
+   MEGA MENU
+   ============================================================ */
+function renderMegaMenu(){
+  document.getElementById('megaMenu').innerHTML = `
+    <div class="mega__grid">
+      ${PRODUCTS.map((p, i) => `
+        <a class="mega__link" href="#/products/${p.slug}" role="menuitem">
+          <span class="mega__num">${String(i + 1).padStart(2, '0')}</span>
+          <span>
+            <span class="mega__title">${p.name}</span>
+            <span class="mega__desc">${p.cat}</span>
+          </span>
+        </a>
+      `).join('')}
+    </div>
+    <div class="mega__foot">
+      <p>Seven manufacturing categories for wholesale and private-label buyers.</p>
+      <a class="link-arrow" href="#/products">All products ${arrow(14)}</a>
+    </div>`;
+}
+
+/* ============================================================
+   MARQUEE STRIP
+   ============================================================ */
+function renderStrip(){
+  const items = [
+    '8+ Years Serving Overseas Markets',
+    '7 Product Categories',
+    'Wholesale &amp; Distribution',
+    'Private-Label Programmes',
+    'Export-Oriented Manufacturing',
+    'Custom Specifications'
+  ];
+  const html = items.map(t => `<span class="strip__item">${t}</span>`).join('');
+  const track = document.getElementById('stripTrack');
+  if (track) track.innerHTML = html + html;
+}
+
+/* ============================================================
+   ROUTER
+   ============================================================ */
+const app = document.getElementById('app');
+
+function parseRoute(){
+  let hash = location.hash.replace(/^#/, '') || '/';
+  let query = '';
+  const qi = hash.indexOf('?');
+  if (qi > -1){ query = hash.slice(qi + 1); hash = hash.slice(0, qi); }
+  const parts = hash.split('/').filter(Boolean);
+  const params = new URLSearchParams(query);
+  return { parts, params };
+}
+
+function render(){
+  const { parts, params } = parseRoute();
+  const route = parts[0] || '';
+  let html = '';
+
+  switch (route){
+    case '':          html = homePage(); break;
+    case 'about':     html = aboutPage(); break;
+    case 'products':
+      html = parts[1] ? productDetailPage(parts[1]) : productsPage();
+      break;
+    case 'manufacturing': html = manufacturingPage(); break;
+    case 'industries':    html = industriesPage(); break;
+    case 'contact':       html = contactPage(params.get('p') || ''); break;
+    default:              html = notFoundPage();
+  }
+
+  app.innerHTML = html;
+
+  // Reset scroll & re-initialise
+  window.scrollTo({ top: 0, behavior: 'auto' });
+  closeDrawer();
+  setActiveNav(route);
+  initPage();
+}
+
+function setActiveNav(route){
+  document.querySelectorAll('[data-route]').forEach(a => {
+    const r = a.getAttribute('data-route').replace('/', '');
+    const match = (r === '' && route === '') || (r !== '' && r === route);
+    if (match) a.setAttribute('aria-current', 'page');
+    else a.removeAttribute('aria-current');
+  });
+}
+
+/* ============================================================
+   PAGE INITIALISATION
+   ============================================================ */
+let observer = null;
+
+function initPage(){
+  initReveals();
+  initCounter();
+  initRail();
+  initFAQ();
+  initWizard();
+  initQuoteForm();
+  initFilters();
+  initProductSearch();
+  initAnchorScroll();
+  updateScrollUI();
+}
+
+function initReveals(){
+  if (observer) observer.disconnect();
+
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const items = document.querySelectorAll('.reveal');
+
+  if (prefersReduced || !('IntersectionObserver' in window)){
+    items.forEach(el => el.classList.add('is-in'));
+    return;
+  }
+
+  observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting){
+        entry.target.classList.add('is-in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+
+  items.forEach(el => observer.observe(el));
+}
+
+function initCounter(){
+  const el = document.querySelector('[data-count]');
+  if (!el) return;
+  const target = parseInt(el.dataset.count, 10);
+  const suffix = el.dataset.suffix || '';
+  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (prefersReduced){ el.textContent = target + suffix; return; }
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      io.unobserve(el);
+      let start = null;
+      const dur = 1200;
+      const step = (ts) => {
+        if (!start) start = ts;
+        const p = Math.min((ts - start) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(target * eased) + suffix;
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    });
+  }, { threshold: 0.6 });
+  io.observe(el);
+}
+
+/* ---- Horizontal product rail ---- */
+function initRail(){
+  const rail = document.getElementById('productRail');
+  if (!rail) return;
+  const prev = document.getElementById('railPrev');
+  const next = document.getElementById('railNext');
+  if (!prev || !next) return;
+
+  const stepSize = () => {
+    const card = rail.querySelector('.pcard');
+    return card ? card.getBoundingClientRect().width + 22 : 320;
+  };
+
+  const updateBtns = () => {
+    const max = rail.scrollWidth - rail.clientWidth - 2;
+    prev.disabled = rail.scrollLeft <= 2;
+    next.disabled = rail.scrollLeft >= max;
+  };
+
+  prev.addEventListener('click', () => rail.scrollBy({ left: -stepSize() * 1.5, behavior: 'smooth' }));
+  next.addEventListener('click', () => rail.scrollBy({ left: stepSize() * 1.5, behavior: 'smooth' }));
+  rail.addEventListener('scroll', updateBtns, { passive: true });
+  window.addEventListener('resize', updateBtns);
+  updateBtns();
+}
+
+/* ---- FAQ accordion ---- */
+function initFAQ(){
+  document.querySelectorAll('.faq__q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq__item');
+      const isOpen = item.classList.contains('is-open');
+      document.querySelectorAll('.faq__item.is-open').forEach(o => {
+        o.classList.remove('is-open');
+        o.querySelector('.faq__q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen){
+        item.classList.add('is-open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+}
+
+/* ---- Quick inquiry wizard ---- */
+function initWizard(){
+  const wiz = document.getElementById('wizard');
+  if (!wiz) return;
+
+  const steps = [...wiz.querySelectorAll('.wizard__step')];
+  const bar = document.getElementById('wizBar');
+  const count = document.getElementById('wizCount');
+  const back = document.getElementById('wizBack');
+  const next = document.getElementById('wizNext');
+  const skip = document.getElementById('wizSkip');
+  const summary = document.getElementById('wizSummary');
+
+  let current = 0;
+  const data = { category: '', type: '', qty: '' };
+
+  function paint(){
+    steps.forEach((s, i) => s.classList.toggle('is-active', i === current));
+    bar.style.width = ((current + 1) / steps.length) * 100 + '%';
+    count.textContent = `Step ${current + 1} of ${steps.length}`;
+    back.disabled = current === 0;
+    next.innerHTML = current === steps.length - 1
+      ? `Continue to Quote Form ${arrow(14)}`
+      : `Continue ${arrow(14)}`;
+
+    if (current === 3){
+      summary.innerHTML = `
+        <div><b>Category:</b> ${data.category || '—'}</div>
+        <div><b>Requirement:</b> ${data.type || '—'}</div>
+        <div><b>Approx. quantity:</b> ${data.qty || 'To be discussed'}</div>`;
+    }
+  }
+
+  wiz.querySelectorAll('.wizard__opts').forEach(group => {
+    group.querySelectorAll('.wizard__opt').forEach(btn => {
+      btn.addEventListener('click', () => {
+        group.querySelectorAll('.wizard__opt').forEach(b => b.setAttribute('aria-pressed', 'false'));
+        btn.setAttribute('aria-pressed', 'true');
+        data[group.dataset.field] = btn.textContent.trim();
+      });
+    });
+  });
+
+  next.addEventListener('click', () => {
+    if (current < steps.length - 1){
+      current++;
+      paint();
+    } else {
+      goToQuote(data.category);
+    }
+  });
+
+  back.addEventListener('click', () => {
+    if (current > 0){ current--; paint(); }
+  });
+
+  skip.addEventListener('click', () => goToQuote(''));
+
+  function goToQuote(catLabel){
+    const match = PRODUCTS.find(p => p.name === catLabel);
+    const slug = match ? match.slug : '';
+    location.hash = `#/contact${slug ? '?p=' + slug : ''}`;
+  }
+
+  paint();
+}
+
+/* ---- Quote form ---- */
+function initQuoteForm(){
+  const form = document.getElementById('quoteForm');
+  if (!form) return;
+
+  const status = document.getElementById('quoteStatus');
+  const submit = document.getElementById('quoteSubmit');
+
+  const rules = {
+    name:     v => v.trim().length >= 2,
+    company:  v => v.trim().length >= 2,
+    email:    v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()),
+    category: v => v !== '',
+    message:  v => v.trim().length >= 10
+  };
+
+  function validateField(name){
+    const input = form.querySelector(`[name="${name}"]`);
+    if (!input) return true;
+    const ok = rules[name](input.value);
+    const field = input.closest('.field');
+    field.classList.toggle('has-error', !ok);
+    input.setAttribute('aria-invalid', ok ? 'false' : 'true');
+    return ok;
+  }
+
+  Object.keys(rules).forEach(name => {
+    const input = form.querySelector(`[name="${name}"]`);
+    if (!input) return;
+    input.addEventListener('blur', () => validateField(name));
+    input.addEventListener('input', () => {
+      if (input.closest('.field').classList.contains('has-error')) validateField(name);
+    });
+  });
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    let valid = true;
+    let firstInvalid = null;
+    Object.keys(rules).forEach(name => {
+      const ok = validateField(name);
+      if (!ok && !firstInvalid){
+        firstInvalid = form.querySelector(`[name="${name}"]`);
+      }
+      valid = valid && ok;
+    });
+
+    if (!valid){
+      showStatus('err', 'Please check the highlighted fields and try again.');
+      if (firstInvalid) firstInvalid.focus();
+      return;
+    }
+
+    const payload = Object.fromEntries(new FormData(form).entries());
+    payload.submittedAt = new Date().toISOString();
+
+    submit.disabled = true;
+    submit.textContent = 'Submitting…';
+    showStatus('info', 'Sending your inquiry…');
+
+    if (CONFIG.quoteEndpoint){
+      try{
+        const res = await fetch(CONFIG.quoteEndpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error('Request failed');
+        showStatus('ok', '<strong>Thank you — your inquiry has been received.</strong><br>Our team will review your requirements and respond using the contact details provided.');
+        form.reset();
+      } catch(err){
+        showStatus('err', '<strong>We could not send your inquiry.</strong><br>Please email us directly at <a href="mailto:' + CONFIG.email + '">' + CONFIG.email + '</a> or message us on WhatsApp.');
+      }
+    } else {
+      // Documented integration point — no endpoint configured yet
+      const summary = Object.entries(payload)
+        .filter(([k, v]) => v && k !== 'submittedAt' && k !== 'attachment')
+        .map(([k, v]) => `${k}: ${v}`)
+        .join('\n');
+
+      showStatus('info', `
+        <strong>Email delivery is not configured on this preview.</strong><br>
+        Your details have <em>not</em> been sent automatically. Please email them directly to
+        <a href="mailto:${CONFIG.email}" style="text-decoration:underline">${CONFIG.email}</a> or message
+        <a href="${CONFIG.whatsappHref}" target="_blank" rel="noopener" style="text-decoration:underline">WhatsApp</a>.
+        <pre id="payloadDump">${summary.replace(/</g, '&lt;')}</pre>
+        <button type="button" class="btn btn--dark btn--sm" id="copyPayload" style="margin-top:.85rem">Copy details</button>
+      `);
+
+      const copyBtn = document.getElementById('copyPayload');
+      if (copyBtn){
+        copyBtn.addEventListener('click', async () => {
+          try{
+            await navigator.clipboard.writeText(summary);
+            copyBtn.textContent = 'Copied ✓';
+            setTimeout(() => { copyBtn.textContent = 'Copy details'; }, 2200);
+          } catch{
+            copyBtn.textContent = 'Copy unavailable — select the text above';
+          }
+        });
+      }
+    }
+
+    submit.disabled = false;
+    submit.innerHTML = `Submit Quote Request ${arrow()}`;
+  });
+
+  function showStatus(type, html){
+    status.className = 'form-status is-visible form-status--' + type;
+    status.innerHTML = html;
+    status.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+}
+
+/* ---- Product filters ---- */
+function initFilters(){
+  const chips = document.querySelectorAll('[data-filter]');
+  const grid = document.getElementById('productGrid');
+  if (!chips.length || !grid) return;
+
+  const cards = [...grid.querySelectorAll('.pcard')];
+  const empty = document.getElementById('emptyState');
+  const statusEl = document.getElementById('filterStatus');
+
+  chips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      chips.forEach(c => {
+        c.classList.remove('is-active');
+        c.setAttribute('aria-pressed', 'false');
+      });
+      chip.classList.add('is-active');
+      chip.setAttribute('aria-pressed', 'true');
+      apply();
+    });
+  });
+
+  function apply(){
+    const active = document.querySelector('[data-filter].is-active');
+    const filter = active ? active.dataset.filter : 'All';
+    const q = (document.getElementById('productSearch')?.value || '').trim().toLowerCase();
+
+    let visible = 0;
+    cards.forEach(card => {
+      const catOk = filter === 'All' || card.dataset.cat === filter;
+      const nameOk = !q || card.dataset.name.includes(q) || card.querySelector('.pcard__title').textContent.toLowerCase().includes(q);
+      const show = catOk && nameOk;
+      card.classList.toggle('hide', !show);
+      if (show) visible++;
+    });
+
+    if (empty) empty.hidden = visible !== 0;
+    if (statusEl) statusEl.textContent = `${visible} product${visible === 1 ? '' : 's'} shown.`;
+  }
+
+  grid.dataset.applyFilter = true;
+  window.__applyProductFilter = apply;
+  apply();
+}
+
+function initProductSearch(){
+  const input = document.getElementById('productSearch');
+  if (!input) return;
+  input.addEventListener('input', () => {
+    if (window.__applyProductFilter) window.__applyProductFilter();
+  });
+}
+
+/* ---- In-page anchor scroll (hero indicator) ---- */
+function initAnchorScroll(){
+  document.querySelectorAll('[data-scroll]').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const target = document.getElementById(link.dataset.scroll);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+}
+
+/* ============================================================
+   GLOBAL SCROLL BEHAVIOUR
+   ============================================================ */
+const header = document.getElementById('header');
+const scrollBar = document.getElementById('scrollBar');
+const toTop = document.getElementById('toTop');
+let ticking = false;
+
+function updateScrollUI(){
+  const y = window.scrollY || window.pageYOffset;
+
+  // Header state
+  header.classList.toggle('is-solid', y > 40);
+
+  // Progress bar
+  const docH = document.documentElement.scrollHeight - window.innerHeight;
+  const p = docH > 0 ? Math.min(y / docH, 1) : 0;
+  scrollBar.style.width = (p * 100) + '%';
+
+  // Back to top
+  toTop.classList.toggle('is-visible', y > 600);
+
+  // Hero parallax
+  const parallaxEl = document.querySelector('[data-parallax]');
+  if (parallaxEl && y < window.innerHeight * 1.2){
+    const factor = parseFloat(parallaxEl.dataset.parallax) || 0.15;
+    parallaxEl.style.transform = `translate3d(0, ${y * factor}px, 0)`;
+  }
+
+  // Process line progress
+  const process = document.getElementById('process');
+  if (process){
+    const rect = process.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const raw = (vh * 0.82 - rect.top) / (rect.height * 0.85);
+    const clamped = Math.max(0, Math.min(1, raw));
+    process.style.setProperty('--p', clamped.toFixed(3));
+  }
+}
+
+function onScroll(){
+  if (!ticking){
+    requestAnimationFrame(() => {
+      updateScrollUI();
+      ticking = false;
+    });
+    ticking = true;
+  }
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
+window.addEventListener('resize', onScroll);
+
+toTop.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+/* ============================================================
+   MOBILE DRAWER
+   ============================================================ */
+const burger = document.getElementById('burger');
+const drawer = document.getElementById('drawer');
+let lastFocused = null;
+
+function openDrawer(){
+  lastFocused = document.activeElement;
+  drawer.hidden = false;
+  requestAnimationFrame(() => drawer.classList.add('is-open'));
+  burger.classList.add('is-open');
+  burger.setAttribute('aria-expanded', 'true');
+  burger.setAttribute('aria-label', 'Close menu');
+  document.body.style.overflow = 'hidden';
+  const firstLink = drawer.querySelector('a');
+  if (firstLink) setTimeout(() => firstLink.focus(), 350);
+}
+
+function closeDrawer(){
+  if (!drawer.classList.contains('is-open') && drawer.hidden) return;
+  drawer.classList.remove('is-open');
+  burger.classList.remove('is-open');
+  burger.setAttribute('aria-expanded', 'false');
+  burger.setAttribute('aria-label', 'Open menu');
+  document.body.style.overflow = '';
+  setTimeout(() => { drawer.hidden = true; }, 650);
+  if (lastFocused) lastFocused.focus();
+}
+
+burger.addEventListener('click', () => {
+  if (drawer.classList.contains('is-open')) closeDrawer();
+  else openDrawer();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape'){
+    if (drawer.classList.contains('is-open')) closeDrawer();
+  }
+  // Simple focus trap inside drawer
+  if (e.key === 'Tab' && drawer.classList.contains('is-open')){
+    const focusables = drawer.querySelectorAll('a, button');
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  }
+});
+
+/* Close drawer on nav link click */
+drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', closeDrawer));
+
+/* ============================================================
+   BOOT
+   ============================================================ */
+window.addEventListener('hashchange', render);
+
+renderFooter();
+renderDrawerContact();
+renderMegaMenu();
+renderStrip();
+render();
+</script>
+</body>
+</html>
